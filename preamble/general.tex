@@ -43,6 +43,31 @@
 \usepackage{mparhack}
 \usepackage{relsize}
 
+%%-------CG Custom------
+\usepackage{gensymb}    % for \degree (origami gripper, Advanced Intelligent System Layout)
+ \renewenvironment{author} {
+ \large
+ \emph
+  }
+
+\newenvironment{affiliations}{
+\medskip
+\large
+}
+
+\renewenvironment{abstract}{
+\small
+\medskip\medskip
+}
+
+\newcommand{\threesubsection}[1]{
+\medskip
+\textit{#1}: 
+}
+
+
+%---------------END CG Custom----------------
+
 % Biblatex
 \input{preamble/biblatex}
 
@@ -192,7 +217,7 @@
 \usepackage{siunitx}
 \sisetup{
   separate-uncertainty,
-  repeatunits=false,
+  % repeatunits=false,
   detect-family,
   unit-mode=text,
 }
