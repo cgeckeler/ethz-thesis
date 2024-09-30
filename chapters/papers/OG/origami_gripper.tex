@@ -1,5 +1,5 @@
-\chapter{Bistable Helical Origami Gripper for Sensor Placement on Branches}
-\label{ch:origami_gripper}
+\chapter[Bistable Helical Origami Gripper for Sensor Placement]{Bistable Helical Origami Gripper for Sensor Placement on Branches}
+\label{ch:OG}
 
 \author{Christian Geckeler*}
 \author{Stefano Mintchev}
@@ -32,7 +32,7 @@ Understanding forest functioning is limited by the scalability of monitoring sol
 Lack of high spatial and temporal resolution data hampers understanding and restoration of natural ecosystems. This is a long-standing challenge in forest canopies. Despite being a biodiversity hotspot \cite{Nakamura2017, Ozanne2003d} and providing crucial ecosystem services (e.g. carbon sequestration \cite{Harris2012, Didham2004}, nutrient cycling \cite{CE2002}, and climate regulation \cite{Ellison2012}), the access and study of canopies is often unsafe and expensive, requiring experienced climbers or the use of forklifts and cranes \cite{Parker1992}. For example, forest canopies create a buffering effect on the local humidity, temperature, and light conditions beneath them: the microclimate \cite{Nakamura2017}. Microclimates are particularly important within the context of understanding, measuring, and mitigating climate change \cite{Frenne2021, Zellweger2020, VonArx2012}. However, many open research questions remain \cite{Jucker2020, Bachofen2020, Law2020}, and finding the answers would require a dense network of sensors to record high resolution climate data.
 \begin{figure} [htbp]
     \centering
-    \includegraphics{chapters/papers/figs/fig_1_all-in-one/Figure_1.pdf}
+    \includegraphics{chapters/papers/OG/figs/fig_1_all-in-one/Figure_1.pdf}
     \caption{Natural and artificial helical grippers. (a) Example of helical coiling in nature (Image by Ante Hamersmit on Unsplash). (b) The proposed origami helical gripper coiled around a branch with a sensor box attached to it. (c) Composition of the gripper and sensor delivery with a MAV.}
     \label{fig:bio-inspiration}
 \end{figure}
@@ -52,7 +52,7 @@ There are three main contributions of this work to the fields of gripper design 
 
 \begin{figure} [htbp]
     \centering
-    \includegraphics[width=\linewidth]{chapters/papers/figs/fig_2_design-intergration/Figure_2-corr-v2.pdf}
+    \includegraphics[width=\linewidth]{chapters/papers/OG/figs/fig_2_design-intergration/Figure_2-corr-v2.pdf}
     \caption{Design and working principle of the bistable helical origami gripper. (a) 3D model of the gripper with schematic of the folding pattern and main components. The dashed blue line folds upwards, whereas the solid red lines folds down. These joints are unidirectional and, in conjunction with the pre-stretched rubber bands, allow for the bistable behavior. (b) State transition sequence. The gripper is pressed against a branch until the angle $\phi$ passes the horizontal, which is when the activation force, $F_A$ is overcome and the gripper is coiled. Once coiled, the gripper can only be removed with a force greater than the holding force, $F_H$, unless the tension in the elastic is released. (c) Energy states and transitions where the corresponding angles of $\phi$ and $\psi _i$ for each state can be seen in (b).}
     \label{fig:gripper_design}
 \end{figure}
@@ -85,7 +85,7 @@ A fiberglass net was added to the top of the MAV, below the gripper, to protect 
 \label{sec:retrieval}
 \begin{figure}[hbp]
     \centering
-    \includegraphics[width=\linewidth]{chapters/papers/figs/fig_8_box/Figure_8_box-corr-v2.pdf}
+    \includegraphics[width=\linewidth]{chapters/papers/OG/figs/fig_8_box/Figure_8_box-corr-v2.pdf}
     \caption{Magnetic retrieval mechanism. (a) CAD view of the mechanism, when a metal plate approaches the bottom, the magnets pull it flush, the lever trigger is pressed and the hook releases the elastic. (b) Demonstration showing the release of the elastic when the lever is pressed; from the closed, tensioned configuration (left) to the open, released configuration (right). (c) Gripper in unfurled transport state on the MAV, with the different components labeled.}
     \label{fig:box}
 \end{figure}
@@ -97,7 +97,7 @@ Functional attributes of the gripper such as the minimum and maximum graspable d
 
 \begin{figure}[hbp]
     \centering
-    \includegraphics[width=\linewidth]{chapters/papers/figs/fig_7_design_parameters/fig_7_design_parameters_gap_v2-corr-v2.pdf}
+    \includegraphics[width=\linewidth]{chapters/papers/OG/figs/fig_7_design_parameters/fig_7_design_parameters_gap_v2-corr-v2.pdf}
     \caption{Geometric design parameters of the gripper. (a) The minimum diameter  $D_{min}$, with $N=3$ (b) Maximum graspable diameter $D_{max}$ of the gripper where $N=n=11$, the number of segments of the gripper. (c) Parameters of the gripper and their effect on the coiled length $C$. (d) Plots showing the effects of increasing each of the gripper parameters in turn on the attributes, chosen values are shown as dashed vertical lines. (e) (Left) Table showing the effect of increasing each of the parameters $\theta, L, w, n$ on the gripper attributes coiled length $C$, the minimum and maximum diameters ($D_{min}$ and $D_{max}$ respectively), and the gap, $g$. (Right) Gripper attributes for our chosen values.}
     \label{fig:parameters}
 \end{figure}
@@ -155,7 +155,7 @@ In order to characterize the gripper, the activation force, number of successful
 
 \begin{figure} [htpb]
     \centering
-    \includegraphics{chapters/papers/figs/fig_3_activation_force/Figure_3.pdf}
+    \includegraphics{chapters/papers/OG/figs/fig_3_activation_force/Figure_3.pdf}
     \caption{Activation force measurements. (a) Test setup for measuring the activation force, $F_A$, the force needed to transition between the unfurled and coiled states. The gripper is mounted on the holder which is attached to the load cell, the branch then moves down at a fixed speed and pushes down on the gripper until it is activated. (b) The force curve of the activation energy as a function of the displacement of the branch (mm), 1.57 N are needed to activate the gripper. The curve shows the mean and standard deviation (dark and light green) from ten trials.}
     \label{fig:activation_force}
 \end{figure}
@@ -167,7 +167,7 @@ In this section we investigate the deployment of the gripper on branches of diff
 
 \begin{figure} [htbp]
     \centering
-    \includegraphics[width=\linewidth]{chapters/papers/figs/fig_4_successful_activation/Figure_4-corr.pdf}
+    \includegraphics[width=\linewidth]{chapters/papers/OG/figs/fig_4_successful_activation/Figure_4-corr.pdf}
     \caption{Resistance to tilt and rotation offsets. (a) Front and top view of the experimental test setup for low velocity and high velocity experiments ,with the gripper (orange) approaching a branch (brown). The gap from the branch to the gripper holders (gray) depends on the branch diameter $D$, and distance between the holders $d$. Both the branch tilt angle $\alpha$ and the rotation of the gripper $\beta$ can be modified.  (b) Number of successful activations for different branch diameters and tilt and rotation offsets. The top row are low velocity experiments, the second row are high velocity experiments. The scale from red (0) to green (10) demonstrates the number of successful activations out of 10. Black cells show unreachable configurations due to physical limits of the test setup when combined with different branch diameters. The dashed red lines denote experiments which were not conducted since they would have all failed, and dashed green lines represent experiments which were not conducted since they would have all succeeded. (c) Sample configurations of successes and failures. At least one full coil of the gripper must be coiled on the branch to be considered a success. (d) High-speed capture of the gripper coiling, low velocity experiment.}
     \label{fig:number_successful_activations}
 \end{figure}
@@ -189,7 +189,7 @@ Translational offsets parallel to the branch will have no impact on the coiling 
 
 \begin{figure} [htbp]
 \centering
-\includegraphics[width=\linewidth]{chapters/papers/figs/fig_5_holding_force/Figure_5-corr.pdf}
+\includegraphics[width=\linewidth]{chapters/papers/OG/figs/fig_5_holding_force/Figure_5-corr.pdf}
 \caption{Holding force measurements. (a) Test setup for measuring $F_H$, the holding force until the gripper is pulled from the branch. The branch is moved upwards at $V_0$, with the load cell attached to the gripper measuring the resulting force. (b) Snapshots at different times during the 14 mm diameter branch test with non-slip.  Larger branch diameters result in lower attainable forces, with the exception of the 8 mm branch with non-slip material, since the branch was too small for the gripper to be able to properly encircle it. (c) Curves showing the holding force for the gripper with just fiberglass ($F_{H, FG}$, left), and with non-slip material ($F_{H,NS}$, right). Measurements were repeated ten times ($n=10$).}
 \label{fig:maximum_holding_force}
 \end{figure}
@@ -212,7 +212,7 @@ Once the sensor has completed its measurement cycle, it must be collected to ret
 
 \begin{figure} [htbp]
     \centering
-    \includegraphics[width=\linewidth]{chapters/papers/figs/fig_6_outdoor_deployment/Figure_6-corr-v2.pdf}
+    \includegraphics[width=\linewidth]{chapters/papers/OG/figs/fig_6_outdoor_deployment/Figure_6-corr-v2.pdf}
     \caption{Outdoor gripper deployment. (a) (Left) The MAV approaching the deployment site with mounted gripper and sensor. (Right) Up-ward facing camera view from onboard the MAV. (b) Activating the state transition of the gripper and deploying the sensor. (c) (Left) Successfully deployed gripper with attached sensor payload, the MAV returns. (Right) Up-ward facing camera view from onboard the MAV. (d) Collection of sensor and gripper with retrieval plate mounted on the MAV, note the release in tension of the green elastic  between (c) and (d) (red circle). (e), (f) sample measurements and logs taken with the sensor.}
     \label{fig:outdoor_activation}
 \end{figure}
