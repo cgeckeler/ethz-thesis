@@ -20,6 +20,28 @@
 \addbibresource{misc.bib}
 \addbibresource{references.bib}
 
+%for faster compilation
+\includeonly{
+frontbackmatter/dirtytitlepage,
+frontbackmatter/titlepage,
+frontbackmatter/titleback,
+frontbackmatter/dedication,
+frontbackmatter/abstract,
+frontbackmatter/acknowledgments,
+frontbackmatter/contents,
+%----------
+chapters/introduction/main,
+chapters/publication_list/main,
+% chapters/papers/OG/origami_gripper,
+% chapters/papers/BOG/biodegradable_gripper,
+% chapters/conclusion_outlook/main,
+%----
+chapters/appendix/main,
+frontbackmatter/bibliography,
+% frontbackmatter/cv,
+% frontbackmatter/publications,
+}
+
 \begin{document}
 \frenchspacing
 \raggedbottom%
@@ -51,6 +73,7 @@
 %
 % Mainmatter
 %
+
 \cleardoublepage\pagenumbering{arabic}%
 \def\dir{chapters/introduction}
 \include{\dir/main}
@@ -69,7 +92,7 @@
 % \include{\dir/main}
 
 % Include some blind text
-\Blinddocument
+% \Blinddocument
 
 \cleardoublepage%
 \def\dir{chapters/conclusion_outlook}

@@ -12,21 +12,115 @@
 % gedient haben. \dots
 % \end{otherlanguage}
 
+%______________TITLE______________
 
+%Accessible Data Collection from Forests and Agricultural Fields using Aerial Robots through automation and user-centric design
+
+% Democratizing Scalable Environmental Monitoring, Biodiversity Assessment, and Pest Detection using Aerial Robots
+
+% Accessible, Scalable, and Automatable Direct Data Collection using UAVs in Forest environments and agriculutral fields
+
+% 
+%_________________________________
+% => how to collect data from inaccessible environments => autonomous/user-friendly sensor placement and collection with UAVs
+\section{The Case for Environmental Data}
+% why is environmental data needed?
+% => 
 - Context: biodiversity + climate crisis, data collection is necessary to make informed decisions and to evaluate effectiveness of measures
+% also in the context of agriculture, more data has resulted in smart farming practices (ie remote senisng), increasing yield, reducing pesticide use, etc
 
-- Problem: Current data collection methods are inadequate, do not enable right type of data collection, cannot access locations, or do not cover temporal or spatial scales needed for proper data analysis. 
+The natural world is in crisis. XX species have declined since XX, with ... Such statistics now seem so commonplace that they seem barely to deserve more than a glanceover, yet it is worth it to have a look at the implications of such numbers. First, these statistics imply that such numbers are based on data, hard incontrovertible data. However, actually most of these statistics /cite are based on projects or outdated publically available datasets. That is not to say that these numbers are not correct or worrying, on the contrary, usually such predictions are more conservative than the reality /cite. The overwhelming abundance of such statistics might also raise the question of whether more data is actually needed, since the trends are clear and the course of action as well (reduced carbon emissions, reduced deforestation, alternative sources of protein, since farming and cattle raising cause XX percent of the world's greenhouse gas emissions as well as one of the primary drivers for deforestation and land use change. Unfortunately, direct actions taken to address an immediate problem tend to have unintended side-effects, with complex systems and many interdependencies making the results harder to predict.  %% examples?
+Natural systems are incredibly complex, and ecosystems have many interdependencies, which predicting positive outcomes challenging. Perhaps a good example of this are carbon credits, where a complex problem has been simplified to a single number, g of carbon, with corresponding min/maxing resulting in monotree farms that do little to promote biodiversity and do not stand the test of time. 
+% what is this text?
+% need data to check (e.g. carbon sink)
 
-- Goal: Democratizing scalable data collection methods for environmental monitoring, biodiversity assessment, and agriculture for all locations and all users.
+% agriculutre:
+% - should have different agricultural methods (agrforestry, intercorpping, no tilling, etc) => agriculutre big driver + cause for land use cahnge, greenhouse gases, but also necessary and growing world population
 
+\section{The Case for Direct Data}
+% - Problem: Current data collection methods are inadequate, do not enable right type of data collection, cannot access locations, or do not cover temporal or spatial scales needed for proper data analysis. 
+% e.g. mostly remote sensing, also for agriculture. also in forests, mostly use satellite data, in person very difficult access 
+% different data modalities are needed for full image (ie challenging to assess biodiversity from satellite images
+% collected data types are complimentary to remote sensing
+% needs to be automated since pure manual sampling is cost prohibitve ( maybe streamlined, reduced human effort
+%
+
+% concept of "direct data collection" => ie most current data collections are indirect, passive, and only tangentally measure the features of interest.
+% ie remote sensing does not detect the presence of pests, but rather the damage caused by the pests, not direct => need to get close and more directly measure pests
+% environmental monitoring proxy measurementns with extrapolations and not in all locations, need to place sensors directly in the region of interest to properly collect data, need to get more into forest and actually maybe interact with forest. 
+% biodiveristy monitoring: while large animals (mammals/birds/etc) can be directly seen camera traps, manual visual inspects, etc. other insects/invertebrates/etc harder to detect and accurately count. => EDNA allows direct physical proof of existance, but also requiers physical interaction
+\section{Robots for Data: Teleoperation and Automation}
+% teleoperation vs automation ( ideally automate everything, however unlikely, so should make available to users
+% end-user not necessarly professional drone pilot, but other scientists, so should make accessible. 
+% maybe end goal is not full automation, but partial automation with human-in-the-loop, ie all the difficult things are automated so many people can access and do, but the decisions and final say is still with the human pilot.
+% => easier legally, pepole also mer accepting, and doesn't require as much complete redundancy as fully automating everything. Also current state of robotics/ML not suited for full auotmation 
+% still have increased efficiency and reduced human labor since now one person can supervise multiple robots and tasks are performed faster.
+
+=> UAVs as a way to access. eg..g sensor deployment, perching, etc.
+However, still need specialized hardware, control, complex (ie de-leaves dual person collection)
+
+- Goal: Democratizing scalable data collection methods for environmental monitoring, biodiversity assessment, and agriculture for all locations and all users. (more locations and more users
+% 1. ie enable new types of data collection, requiring direct interaction with the environment or objects in the environment
+% 2. enable more people to use collect this data through automation and user-friendliness
+% - enable new novel locations through the use of UAVs. 
+
+% [maybe this comes after the research questions, as the answer why they are needed]
 - Contributions:
-Collect novel (relevant, vs remote sensing) types of data of environmental factors (eDNA, volatiles)
-Initial steps to provide easy-to-use solutions for end-users through automation and user-centric design 
-Enable novel use cases for UAVs, placing and collecting sensors from tree canopies, or placing and collecting sensors from agricultural fields
-Provides access to previously inaccessible locations, and the use of automatable drones permits scaling to larger scales
+1. Collect novel (relevant, vs remote sensing) types of data of environmental factors (eDNA, volatiles) [new data modalities]
+2. Initial steps to provide easy-to-use solutions for end-users through automation and user-centric design  (user-friendliness, new data modalities)
+3. Enable novel use cases for UAVs, placing and collecting sensors from tree canopies, or placing and collecting sensors from agricultural fields (new locations, new data modalities)
+4. Provides access to previously inaccessible locations, and the use of automatable drones permits scaling to larger scales (scalable, new locations)
+
+\section{Thesis Outline}
+% Thesis outline /research questions
+Q1. What type of data is necessary to collect for holistic view of environment/biodiv/pest (direct data collection)
+Q2. How to democratise direct data collection
+Q3: how to enable direct data collection from previously inaccessibel (diffict to access) locations?
+Q4: How to scale?
+% => (summarized)
+Q1: What data is needed for direct data collection? [eDNA, volatiles, direct sensor data]
+Q2: How to democratize direct data collection? [automation, user-friendliness]
+Q3: How to scale direct data collection? [use UAV to access new locations + automate ]
+Q4: How to collect direct data from challenging locations? [UAVs for new locations]
+
+\subsection{Pest Detection in Agricultural Fields}
+% Part A - looking at XXX
+% Paper x,y,z which did whatever...
+
+\subsubsection{Robotic Volatile Sampling for Early Detection of Plant Stress: Precision Agriculture Beyond Visual Remote Sensing \cite{Geckeler2023a}}
+%Abstract%
+% Global agriculture is challenged to provide food for a human population that is larger than ever before and still increasing. This is accompanied by the need to reduce the large global impacts of agriculture while increasing yields. Early identification of plant stress enables fast intervention to limit crop losses and optimized application of pesticides and fertilizer to reduce environmental impacts. Current image-based approaches identify plant stress responses hours or days after the stress event, usually only after substantial damage has occurred and visual cues become apparent. In contrast, plant volatiles are released seconds to hours after stress events and can quickly indicate both the type and severity of stress. An automatable and nondisruptive sampling method is needed to enable the use of plant volatiles for monitoring plant stress in precision agriculture. In this work, we detail the development of a plant volatile sampler that can be deployed and collected with an uncrewed aerial vehicle (UAV). The effect of sam- pling flow rate, horizontal distance to volatile source, and overhead downwash on collected volatiles is investigated, along with the deployment accuracy and retrieval successes with manual flight. Finally, volatile sampling is validated in outdoor tests. The possibility of robotic collection of plant volatiles is a first and important step toward the use of chemical signals for early stress detection and opens up new avenues for precision agriculture beyond visual remote sensing.
 
 
-% Paper Structure (Cyrill):
+\subsubsection{User-Centric Payload Design and Usability Testing for Agricultural Sensor Placement and Retrieval using Off-the-Shelf Micro Aerial Vehicles \cite{Geckeler2024a}}
+%Abstract
+%—Increased flight time and advanced sensors are making Micro Aerial Vehicles (MAVs) easier to use, facilitating their widespread adoption in fields such as precision agriculture or environmental monitoring. However, current applications are limited mainly to passive visual observation from far above; to enable the next generation of aerial robot applications, MAVs must begin to directly physically interact with objects in the environment, such as placing and collecting sensors. Enabling these applications for a wide spectrum of end-users is only possible if the mechanism is safe and easy to use, without overburdening the user with complex integration, complicated control, or overwhelming and convoluted feedback. To this end we propose a self-sufficient passive payload system to enable both the deployment and retrieval of sensors for agri- culture. This mechanism can be simply mechanically attached to a commercial, off-the-shelf MAV, without requiring further electrical or software integration. The user-centric design and mechanical intelligence of the system facilitates ease of use through simplified control with targeted perceptual feedback. The usability of the system is validated quantitatively and qualitatively in a user study demonstrating sensor deployment and collection. All participants were able to deploy and collect at least four sensors both within 10 minutes in visual line-of- sight and within 12 minutes in beyond visual line-of-sight, after only three minutes of practice. Enabling MAVs to physically interact with their environment will usher in the next stage of MAV utility and applications. Complex tasks, such as sensor deployment and retrieval, can be realized relatively simply, by relying on a mechanically passive system designed with the user in mind, these payloads can enable such applications to be more widely available and inclusive to end-users.
+
+
+\subsection{Environmental Monitoring in Forests}
+
+\subsubsection{Bistable Helical Origami Gripper for Sensor Placement on Branches \cite{Geckeler2022a}}
+
+
+
+\subsubsection{Biodegradable Origami Gripper Actuated with Gelatin Hydrogel for Aerial Sensor Attachment to Tree Branches \cite{Geckeler2023b}}
+
+\subsubsection{WIP: SnailBot: Robotic Environmental Monitoring using Gelatin Hydrogels as a
+Biodegradable Adhesive}
+
+%Automation
+\subsubsection{Learning Occluded Branch Depth Maps in Forest Environments Using RGB-D Images \cite{Geckeler2024}}
+
+\subsubsection{WIP: Event Spectroscopy: Event-based Multispectral and Depth Sensing using Structured Light}
+
+\subsection{Biodiversity Assessments in Forests}
+
+\subsubsection{eProbe: Sampling of Environmental DNA within Tree Canopies with Drones \cite{Kirchgeorg2024}}
+
+\subsubsection{WIP: Autonomous Surface eDNA Collection from Rainforests: ETH BIODIVX in the XPrize Rainforest Finals}
+
+
+% Paper Structure (Cyrill): (ie more closely follows the table, then makes all the check boxes at the end
 % Chapter 2: manual biodiv/env monitoring in forests
 % OG, BOG, SB => Sensor placement + environmental monitoring in new locations (outer-branches forest, near trunk, etc),  all manual
 
@@ -34,7 +128,7 @@ Provides access to previously inaccessible locations, and the use of automatable
 % OBR, ED => towards automation
 
 % Chapter 4: 
-% VOL, UR => Sensor placement in agricultural fields + user-friendly
+% VOL, UR => Sensor placement in agricultural fields + user-friendly (manual)
 
 % Chapter 5:
 % EP2, XP => scalable, automated, user-friendly biodv monitoring through eDNO in forest environments
@@ -45,7 +139,105 @@ Provides access to previously inaccessible locations, and the use of automatable
 % OBR, ED => towards automation
 
 % Chapter 3: Biodiv. monitoring in forests
-% % EP2, XP => scalable, automated, user-friendly biodv monitoring through eDNO in forest environments
+% % EP2, XP => scalable, automated, user-friendly biodv monitoring through eDNA in forest environments
 
 % Chapter 4: Pest detection in agriculuture
 % VOL, UR => Sensor placement in agricultural fields + user-friendly
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% OR
+%================================This one========================================
+% Chapter 2: Pest detection in agriculuture
+% VOL, UR => Sensor placement in agricultural fields + user-friendly (don't show automation, etc)
+
+% Chapter 3: env. monitoring in forests
+% OG, BOG, SB => Sensor placement + environmental monitoring in new locations (outer-branches forest, near trunk, etc),  all manual + 
+% OBR, ED => towards automation
+
+% Chapter 4: Biodiv. monitoring in forests
+% % EP2, XP => scalable, automated, user-friendly biodv monitoring through eDNO in forest environments
+%========================================================================
+
+
+% % Table according to #1SM
+% \begin{table}
+%     \centering 
+%     \begin{tabular}{r|ccccccccc}
+%             % OG  & BOG & SB & OBR & ED & EP-2 & XP & VOL & UR
+%          &  \cite{Geckeler2022a} & \cite{Geckeler2023b} & SB & \cite{Geckeler2024} & ED & \cite{Kirchgeorg2024} & XP & \cite{Geckeler2023a} & \cite{Geckeler2024a}\\
+%          \hline \hline
+%          New Locations          & X & X & X &   &   & X & X & X &  \\
+%          \hline
+%          User Friendliness      &   & X &   & X &   & X & X &   & X\\
+%          \hline
+%          New Data Modalities    &   &   &   &   & X & X & X & X &  \\
+%          \hline
+%          Automation             &   &   &   & X & X &   & X &   & X\\
+%          \hline
+%          Scalability            &   &   & X &   & X & X & X & X & X\\
+%     \end{tabular}
+%     \caption{Caption}
+%     \label{tab:my_label}
+% \end{table}
+
+% % Table according to #2,CS (switch EP2/XP with VOL/UR)
+% \begin{table}
+%     \centering 
+%     \begin{tabular}{r|ccccccccc}
+%             % OG  & BOG & SB & OBR & ED & VOL & UR & EP2 & XP
+%          &  \cite{Geckeler2022a} & \cite{Geckeler2023b} & SB & \cite{Geckeler2024} & ED & \cite{Geckeler2023a} & \cite{Geckeler2024a} & \cite{Kirchgeorg2024} & XP \\
+%          \hline \hline
+%          New Locations          & X & X & X &   &   & X &   & X & X\\
+%          \hline
+%          User Friendliness      &   & X &   & X &   &   & X & X & X\\
+%          \hline
+%          New Data Modalities    &   &   &   &   & X & X &   & X & X\\
+%          \hline
+%          Automation             &   &   &   & X & X &   & X &   & X\\
+%          \hline
+%          Scalability            &   &   & X &   & X & X & X & X & X\\
+%     \end{tabular}
+%     \caption{Caption}
+%     \label{tab:my_label}
+% \end{table}
+
+% Table according to #2,CS (switch EP2/XP with VOL/UR), but with rows switched
+\begin{table}
+    \centering 
+    \begin{tabular}{r|ccccccccc}
+            % OG  & BOG & SB & OBR & ED & VOL & UR & EP2 & XP
+         &  \cite{Geckeler2022a} & \cite{Geckeler2023b} & SB & \cite{Geckeler2024} & ED & \cite{Geckeler2023a} & \cite{Geckeler2024a} & \cite{Kirchgeorg2024} & XP \\
+         \hline \hline
+         New Data Modalities    &   &   &   &   & X & X &   & X & X\\
+         \hline
+         Automation             &   &   &   & X & X &   & X &   & X\\
+         \hline
+         Scalability            &   &   & X &   & X & X & X & X & X\\
+         \hline
+         User Friendliness      &   & X &   & X &   &   & X & X & X\\
+         \hline
+         New Locations          & X & X & X &   &   & X  &   & X & X\\
+    \end{tabular}
+    \caption{Sorting According to table, increasing points addressed}
+    \label{tab:my_label}
+\end{table}
+
+% Table according to #3,CS (but with VOL/UR first), and with rows switched
+\begin{table}
+    \centering 
+    \begin{tabular}{r|ccccccccc}
+            % VOL & UR & OG  & BOG & SB & OBR & ED & EP2 & XP
+         & \cite{Geckeler2023a} & \cite{Geckeler2024a} &  \cite{Geckeler2022a} & \cite{Geckeler2023b} & SB & \cite{Geckeler2024} & ED & \cite{Kirchgeorg2024} & XP \\
+         \hline \hline
+         New Data Modalities   & X &   &   &   &   &   & X & X & X\\
+         \hline
+         Automation            &   & X &   &   &   & X & X &   & X\\
+         \hline
+         Scalability           & X & X &   &   & X &   & X &  X & X\\
+         \hline
+         User Friendliness     &   & X &   & X &   & X &   &  X & X\\
+         \hline
+         New Locations         & X &   & X & X & X &   &   &  X & X\\
+    \end{tabular}
+    \caption{Sorting according to themes (Pest detection, env. monitoring, biodiveristy assessment)}
+    \label{tab:my_label}
+\end{table}
