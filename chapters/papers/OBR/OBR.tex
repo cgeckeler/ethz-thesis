@@ -1,5 +1,15 @@
-\chapter{Learning Occluded Branch Depth Maps in Forest Environments using RGB-D Images}
+\chapter[Learning Occluded Branch Depth Maps in Forest Environments]{Learning Occluded Branch Depth Maps in Forest Environments using RGB-D Images}
 \label{ch:OBR}
+
+% % \newcommand{\figurevspaceabove}{-0.6cm}
+% % \newcommand{\figurevspacebelow}{-0.3cm}
+% \newcommand{\figurevspaceabove}{-0.5cm}
+% % \newcommand{\figurevspaceabove}{0cm}
+% \newcommand{\figurevspacebelow}{-0.5cm}
+% % \newcommand{\figurevspacebelow}{0cm}
+\newcommand{\figurevspaceabove}{0cm}
+\newcommand{\figurevspacebelow}{0cm}
+
 
 \author{
 Christian~Geckeler,
@@ -35,7 +45,7 @@ Besides environmental monitoring, MAVs are also demonstrating increased use in a
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=1\columnwidth]{figures/fig-1-overview/fig-1-overview-v03.pdf}
+\includegraphics[width=1\columnwidth]{chapters/papers/OBR/figures/fig-1-overview/fig-1-overview-v03.pdf}
 \vspace{\figurevspaceabove}
 \caption{(A) Simulation RGB tree image (left) and predicted depth point cloud only for branches (right). (B) Predicted pixel-wise depth values only for branches, on real images from trees from a Masoala Rainforest (colorbar in meters).
 %Predicting pixel-wise depth values only for branches, on real images from trees from a Masoala Rainforest.
@@ -108,7 +118,7 @@ While LiDAR presents an increasingly popular choice of perception sensor for aer
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=1\columnwidth]{figures/fig-2-networks/fig-2-networks-v02.pdf}
+\includegraphics[width=1\columnwidth]{chapters/papers/OBR/figures/fig-2-networks/fig-2-networks-v02.pdf}
 \vspace{\figurevspaceabove}
 % \vspace{1cm}
 \caption{Network architectures: (A) TransUNet \cite{Chen2021c}, and (B) ESANet \cite{Seichter2021}.}
@@ -138,7 +148,7 @@ Five different helical trajectories, orbiting each tree to simulate drone flight
 % \vspace{-6em}
 \begin{figure}[!t]
 \centering
-\includegraphics[width=1\columnwidth]{figures/fig-3-sim-training/fig-3-sim-training-v02.pdf}
+\includegraphics[width=1\columnwidth]{chapters/papers/OBR/figures/fig-3-sim-training/fig-3-sim-training-v02.pdf}
 \vspace{\figurevspaceabove}
 \caption{RGB (A-I) and depth (B-I) data obtained in the Unreal Engine simulation, and real RGB (A-II) and depth (B-II) data captured with the Intel Realsense D435 depth sensor. Colorbar on the right shows depth scale in meters.}
 \label{fig-3-sim-training}
@@ -313,7 +323,7 @@ To test the generalization ability of the models, two tree species, namely Shagb
 
 \begin{figure}[!t]
     \centering
-    \includegraphics[width=1\columnwidth]{figures/fig-4-qualitative-sim/fig-4-qualitative-sim-v05.pdf}
+    \includegraphics[width=1\columnwidth]{chapters/papers/OBR/figures/fig-4-qualitative-sim/fig-4-qualitative-sim-v05.pdf}
     \vspace{\figurevspaceabove}
     \caption{Simulation inputs and outputs from the test dataset. Input RGB image (A), input depth image (B), with the target ground truth depth \mbox{mask (C)} and predicted depth masks of TransUNet (D). Tree species are Elm (I), Amur Cork (II),  Black Alder (III), London Plane (IV), Weeping Beech (V), and American Sycamore (VI). Bottom colorbar denotes depth scale in meters.}
     \label{fig-4-qualitative-sim}
@@ -589,7 +599,7 @@ To determine the importance of the contribution of the color and depth input res
 
 \begin{figure}[!hpt]
     \centering
-    \includegraphics[width=0.48\textwidth]{figures/fig-6-qualtiative-real-comparison/fig-6-qualitative-real-comparison-half-v02.pdf}
+    \includegraphics[width=\linewidth]{chapters/papers/OBR/figures/fig-6-qualtiative-real-comparison/fig-6-qualitative-real-comparison-half-v02.pdf}
     % \vspace{\figurevspaceabove}
     % \caption{Handpicked example outputs on two real-world images. Input RGB images (I-A, I-C), input depth images (I-B, I-D), and predicted network outputs: (II) Baseline, (III) U-Net, (IV) TransUNet, (V) ESANet. The network outputs in column A and C show the results on networks trained without domain transfer augmentation (II-A to V-A and II-C to V-C), and B and D with domain transfer augmentation (II-B to V-B and II-D to V-D).}
     \caption{Handpicked example output on a real-world images. (A) Input RGB image, (B) input depth images, (C) colormap for depth scale in meters, and predicted network outputs (D) without domain transfer augmentation and (E) with domain transfer augmentation: (I) Baseline, (II) U-Net, (III) TransUNet, (IV) ESANet.}
@@ -619,7 +629,7 @@ Discarding the depth channel decreases performance by 38\% (RMSE) up to 90\% (MS
 
 \begin{figure*}[!hpt]
 \centering
-\includegraphics[scale=1]{figures/fig-5-qualitative-real/fig-5-qualitative-real.pdf}
+\includegraphics[width=\linewidth]{chapters/papers/OBR/figures/fig-5-qualitative-real/fig-5-qualitative-real.pdf}
 % \vspace{\figurevspaceabove}
 \caption{Qualitative real-world data of the ESANet on trees from Swiss temperate forests (A-C) and trees from a masoala rainforest (D-F). The network receives RGB (I) and depth (II) as input and computes the pixel-wise depth of the occluded branches (III). Colorbar on the right shows depth scale in meters.}
 \label{fig-5-qualitative-real}

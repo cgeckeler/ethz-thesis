@@ -31,11 +31,18 @@ frontbackmatter/acknowledgments,
 frontbackmatter/contents,
 %----------
 chapters/introduction/main,
-chapters/publication_list/main,
-% chapters/papers/OG/origami_gripper,
-% chapters/papers/BOG/biodegradable_gripper,
+chapters/publication-list/main,
+% chapters/papers/VOL/VOL,
+% chapters/papers/UR/UR,
+% chapters/papers/OG/origami_gripper,                   %added
+% chapters/papers/BOG/biodegradable_gripper,            %added
+% chapters/papers/SB/SB,
+% chapters/papers/OBR/OBR,                              %added
+% chapters/papers/ED/ED,                                %-----
+% chapters/papers/EP/EP,
+% chapters/papers/XP/XP,                                %----
 % chapters/conclusion_outlook/main,
-%----
+%----% VOL, UR; OG,BOG,SB; OBR,ED; EP2, XP
 chapters/appendix/main,
 frontbackmatter/bibliography,
 % frontbackmatter/cv,
@@ -83,9 +90,32 @@ frontbackmatter/bibliography,
 \def\dir{chapters/publication-list}
 \include{\dir/main}
 
+% \cleardoublepage%
+% \include{chapters/papers/VOL/VOL}
+
+% \cleardoublepage%
+% \include{chapters/papers/UR/UR}
+
 \cleardoublepage%
 \include{chapters/papers/OG/origami_gripper}
+
+\cleardoublepage%
 \include{chapters/papers/BOG/biodegradable_gripper}
+
+% \cleardoublepage%
+% \include{chapters/papers/SB/SB}
+
+\cleardoublepage%
+\include{chapters/papers/OBR/OBR}
+
+% \cleardoublepage%
+% \include{chapters/papers/ED/ED}
+
+% \cleardoublepage%
+% \include{chapters/papers/EP/EP}
+
+% \cleardoublepage%
+% \include{chapters/papers/XP/XP}
 
 % \cleardoublepage%
 % \def\dir{chapters/sample-chapter}

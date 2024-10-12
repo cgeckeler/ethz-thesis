@@ -23,16 +23,37 @@
 % 
 %_________________________________
 % => how to collect data from inaccessible environments => autonomous/user-friendly sensor placement and collection with UAVs
-\section{The Case for Environmental Data}
+
+Snailbot Intro:
+% Current climate and biodiversity crises \cite{Pereira2024, Weiskopf2024, Pimm2014, Portner2023} underscore the necessity and current lack of comprehensive and scalable environmental and biodiversity monitoring \cite{Gonzalez2023a, McRae2017, Gonzalez2016, Mora2011}. Almost a third of all species assessed by the IUCN RedList are deemed to be threatened, yet less than 8\% of the estimated total number of species have been assessed.
+% % Of the 163,040 species assessed by the IUCN, almost a third, over 45,000, are deemed to be threatened. Yet the estimated number of species lies over 2 million, meaning that less than 8\% have been assessed.
+% Biodiversity loss has even been linked to reducing global terrestrial carbon storage \cite{Weiskopf2024}, exacerbating and amplifying carbon emissions and climate change, as well as cascading effects across ecosystems \cite{Rosenberg2019, Ceballos2015}, affecting human social and economic prospects \cite{Frank2024, Portner2023}.
+% Forests in particular are biodiversity hotspots, home to over half of the world's vertebrate species \cite{Pillay2022} as well as providing essential ecosystem services and climate regulation \cite{Brockerhoff2017}. However, they are challenging to access for data collection, even though this data is essential to understand and protect forest functioning and their impact on biodiversity, climate, and overall ecosystem health. Such data is also vital to evaluate the success of strategies aimed at mitigating climate change and reducing biodiversity loss \cite{Gonzalez2023}, especially within the context of the United Nations (UN) Sustainable Development Goals (SDGs). However, concrete data, especially on biodiversity, ecosystems, and climate are still lacking \cite{Goessmann2023} and costly to collect using conventional, mostly manual methods \cite{Cannon2021, UNEnvironment2019}. 
+% Developments in robotic environmental monitoring have shown great promise in both accessing challenging locations as well as scaling data collection through automation \cite{LaVigne2022, Charron2020, Kirchgeorg2024, Hamaza, Aucone2023a, Geckeler2022a}.
+
+
+\section{The Case for Environmental Data} %2-3 pages
 % why is environmental data needed?
 % => 
 - Context: biodiversity + climate crisis, data collection is necessary to make informed decisions and to evaluate effectiveness of measures
 % also in the context of agriculture, more data has resulted in smart farming practices (ie remote senisng), increasing yield, reducing pesticide use, etc
 
-The natural world is in crisis. XX species have declined since XX, with ... Such statistics now seem so commonplace that they seem barely to deserve more than a glanceover, yet it is worth it to have a look at the implications of such numbers. First, these statistics imply that such numbers are based on data, hard incontrovertible data. However, actually most of these statistics /cite are based on projects or outdated publically available datasets. That is not to say that these numbers are not correct or worrying, on the contrary, usually such predictions are more conservative than the reality /cite. The overwhelming abundance of such statistics might also raise the question of whether more data is actually needed, since the trends are clear and the course of action as well (reduced carbon emissions, reduced deforestation, alternative sources of protein, since farming and cattle raising cause XX percent of the world's greenhouse gas emissions as well as one of the primary drivers for deforestation and land use change. Unfortunately, direct actions taken to address an immediate problem tend to have unintended side-effects, with complex systems and many interdependencies making the results harder to predict.  %% examples?
+The natural world is in crisis. XX species have declined since XX, with ... Such statistics now seem so commonplace that they seem barely to deserve more than a glanceover, yet it is worth it to have a look at the implications of such numbers. First, these statistics imply that such numbers are based on data, hard incontrovertible data. However, actually most of these statistics /cite are based on projections or outdated publically available datasets. That is not to say that these numbers are not correct or worrying, on the contrary, usually such predictions are more conservative than the reality /cite. The overwhelming abundance of such statistics might also raise the question of whether more data is actually needed, since the trends are clear and the course of action as well (reduced carbon emissions, reduced deforestation, alternative sources of protein, since farming and cattle raising cause XX percent of the world's greenhouse gas emissions as well as one of the primary drivers for deforestation and land use change. Such statistics are not only a call to action, but also a verification that the undertaken steps are leading to the desired outcome. Unfortunately, direct actions taken to address an immediate problem tend to have unintended side-effects, with complex systems and many interdependencies making the results harder to predict.  %% examples?
 Natural systems are incredibly complex, and ecosystems have many interdependencies, which predicting positive outcomes challenging. Perhaps a good example of this are carbon credits, where a complex problem has been simplified to a single number, g of carbon, with corresponding min/maxing resulting in monotree farms that do little to promote biodiversity and do not stand the test of time. 
 % what is this text?
 % need data to check (e.g. carbon sink)
+
+Agriculture stands out as a particularly important field, since it is essential to feed the world's growing  population and provides livelihoods to XX people, yet it also accounts for XX percent of global greenhouse gas emissions, is a major driver for deforestation due to land-use change. One method for reducing the environmental impact of agriculture is through sustainable intensification (SI). The main principles of SI are designed to increase yield and leverage biodiversity to maintain or increase yields while reducing environmentla impact by fostering biodiversity...
+
+Early detection of herbivore pest infestiations in crops can reduce crop losses, limit the amount of applied pesticides, which will also have postiive ripple effects on local biodiveristy such as the insect populations. 
+%This will need to rely on novel data sources, such as volatiles, since remote sensing detects too late. 
+
+%RAM paper intro%
+% Global agriculture faces unprecedented pressures to feed a growing population, cater to increasingly selective consumer choices, ensure economic viability for the roughly one billion farmers in the world, ensure enough yield with increasingly unpredictable and extreme climate events, and also reduce environmental impact~\cite{McGreevy2022}. Through sustainable intensification (SI), large global change impacts of agriculture can be reduced while increasing yields~\cite{Cassman2020, Pretty2018, Garnett2013}. Many SI strategies leverage productivity gains from increasing biodiversity in farm fields, which can improve land area use and conserve soil through better space-filling. However, the cultivation of such heterogeneous SI fields is more labor-intensive per area than for homogeneous monoculture-based approaches, and not amenable to standard automation strategies for monocultures, which require bare soil and synchronized yields. Smart and adaptive automation is thus critical to upscale SI and provide more food on less land, with fewer negative impacts~\cite{Sparrow2021, Basso2020}.
+% A key challenge for SI is the early detection of plant stress for rapid and effective interventions to reduce crop losses, and to optimise the application of pesticides and fertilisers, thereby reducing environmental impact. Precision agriculture thus far has mainly relied on visual imaging technologies such as multi- or hyperspectral cameras to detect plant stress~\cite{Tsouros2019, Toth2016, Singh2020}. A current limitation is that imaging is best suited to identify plant responses to stress at a later stage, i.e., when plants have already undergone substantial damage, because visual damage appears hours or even days after the stress event~(Figure~\ref{fig-1-overview}A)~\cite{mahlein_hyperspectral_2018}. However, plants respond to stress within seconds to hours by producing phytohormones and bioactive chemicals from a variety of pathways~\cite{schuman_layers_2016}. Some of these have sufficiently low vapor pressure to be volatile under standard conditions on Earth, and thus can be perceived at a distance. One of the best-studied phenomena in the field of plant-insect interactions is the production of specific plant volatile blends upon herbivory (10's to 100's of compounds) which indicate the timing and nature of the herbivore as well as the severity of attack~\cite{howe_plant_2008, dicke_evolutionary_2010}. Plant volatiles thus serve as important indicators of plant condition prior to visible or severe damage, and also can indicate the success or failure of some SI strategies. Plant volatiles have been used by insects and other organisms over millions of years to forage on plants and assess plant status, but they are still not exploited for precision agriculture~\cite{turlings_tritrophic_2018}. Volatiles represent an interesting alternative or complement to imaging for early and precise detection of stress and subsequent application of mitigation strategies to reduce yield loss.
+
+Forests are home to over half of the world's vertebrate species /cite ....XXX Yet, they are under threat as wel
+% Two ecosystems/environments that are of particular note are forests and agricultural fields. 
 
 % agriculutre:
 % - should have different agricultural methods (agrforestry, intercorpping, no tilling, etc) => agriculutre big driver + cause for land use cahnge, greenhouse gases, but also necessary and growing world population
@@ -45,16 +66,43 @@ Natural systems are incredibly complex, and ecosystems have many interdependenci
 % needs to be automated since pure manual sampling is cost prohibitve ( maybe streamlined, reduced human effort
 %
 
+In the case of agriculture, precision or smart farming /cite almost exclusively refers to the utilization of additional external data sources in decesion making for pesticited or fertilizer application, for watering, or harvesting times. These data sources usually comprise of remote sensing, either from a UAV flown directly over the field, providing localized, up-to-date, and higher resolution data (multipsectral/thermal), or from commerical satellite feeds which provide coarser information. 
+These data sources are all indect, which mean that they are easier to collect at larger scales, but limitied in the information value compared to direct data sources. 
+One promising direct data source for agriculture are volatiles, which are ....
+Directly collecting volatiles permits early detection of plant stress, more or less directly after the herbivore begins to feed on the plant. This collection is currently mostly done manually, with manual enclosing of plant headspace...  This direct data collection for agriculture is more challenging to collect, especially at larger scales, but is much more informative 
+% manual colleciton 
+% introduction to volatiles 
+
+Similarly for biodiversity assessment, multiple platforms attempt to provide a silver bullet to the problem of biodiversity monitoring, essentially mainly relying on satellite data, exsisting databases, /cite {gainforest, restor} and sometimes a few localized measurements that are used for extrapolation /cite{that company}. While state of the art algorithms can have impressive performance (e.g. prediciting the habitita of certain fish, inferring the population number of xx). For reliable biodiversity assessments, data still needs to be collected in-situ, whether counting popluations of penguins directly with UAVs /cite, tracking with camera traps, or. ...
+
+eDNA has emerged in recent years as a promising tool for large-scale biodiveristy assessment from single samples. By collecting 
+% eDNA intro : collect one sample, aggregated species (water), or manually aggregate through touching many surafecs 
+% challenge:difficult to collect
+
+% Environmental data collection also similar, usually just try to extrapolate from a few localized measurements, or use large-scale external (satellite) data to try to combine
+
 % concept of "direct data collection" => ie most current data collections are indirect, passive, and only tangentally measure the features of interest.
 % ie remote sensing does not detect the presence of pests, but rather the damage caused by the pests, not direct => need to get close and more directly measure pests
 % environmental monitoring proxy measurementns with extrapolations and not in all locations, need to place sensors directly in the region of interest to properly collect data, need to get more into forest and actually maybe interact with forest. 
 % biodiveristy monitoring: while large animals (mammals/birds/etc) can be directly seen camera traps, manual visual inspects, etc. other insects/invertebrates/etc harder to detect and accurately count. => EDNA allows direct physical proof of existance, but also requiers physical interaction
+
+
+% remote data is great, since localized, rich in information, but a) more time/consuming to collect ie not scalable, b) challenging to collect depending on location (forests, agriculutural fields)   => robots?
 \section{Robots for Data: Teleoperation and Automation}
+% robots can enable direct data collection.
+% using aerial robots can also enable access to challenging locations
+% gradient of complete manual control (teleoperation) to complete automation
+% still currently never full manual control, always some offloaded ie control, PID, , or then waypoint missions maybe abstacle avoidance to full autonomy. 
+
+
 % teleoperation vs automation ( ideally automate everything, however unlikely, so should make available to users
 % end-user not necessarly professional drone pilot, but other scientists, so should make accessible. 
 % maybe end goal is not full automation, but partial automation with human-in-the-loop, ie all the difficult things are automated so many people can access and do, but the decisions and final say is still with the human pilot.
 % => easier legally, pepole also mer accepting, and doesn't require as much complete redundancy as fully automating everything. Also current state of robotics/ML not suited for full auotmation 
 % still have increased efficiency and reduced human labor since now one person can supervise multiple robots and tasks are performed faster.
+
+In the case of volatiles for agriculture, while direct data capture is more informative, it is also more timeconsuming and can cover less larger scales than traditoinal remote sensing methods. To still enable use at the scales needed for agriculture, robots are needed.
+% aerial robots enabel covering of large areas, and through the option of automation can also image larger scales. 
 
 => UAVs as a way to access. eg..g sensor deployment, perching, etc.
 However, still need specialized hardware, control, complex (ie de-leaves dual person collection)
@@ -145,7 +193,8 @@ Biodegradable Adhesive}
 % VOL, UR => Sensor placement in agricultural fields + user-friendly
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% OR
-%================================This one========================================
+%================================This is the one========================================
+% VOL, UR; OG,BOG,SB; OBR,ED; EP2, XP
 % Chapter 2: Pest detection in agriculuture
 % VOL, UR => Sensor placement in agricultural fields + user-friendly (don't show automation, etc)
 
