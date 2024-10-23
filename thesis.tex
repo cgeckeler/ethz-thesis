@@ -9,7 +9,7 @@
     %BCOR=0mm, paper=15.24cm:22.86cm, fontsize=10pt,% US-Trade hard cover
 ]{scrreprt}
 \usepackage{etex}
-\reserveinserts{10}
+%\reserveinserts{10} % TODO add for online version
 
 \input{preamble/general}
 \usepackage[final]{pdfpages}
@@ -39,7 +39,7 @@ chapters/publication-list/main,
 % chapters/papers/SB/SB,                                %-----
 % chapters/papers/OBR/OBR,                              %added
 % chapters/papers/ED/ED,                                %-----
-% chapters/papers/EP/EP,
+ chapters/papers/EP/EP,
 % chapters/papers/XP/XP,                                %-----
 % chapters/conclusion_outlook/main,
 %----% VOL, UR; OG,BOG,SB; OBR,ED; EP2, XP
@@ -111,8 +111,8 @@ frontbackmatter/bibliography,
 % \cleardoublepage%
 % \include{chapters/papers/ED/ED}
 
-% \cleardoublepage%
-% \include{chapters/papers/EP/EP}
+ \cleardoublepage%
+ \include{chapters/papers/EP/EP}
 
 % \cleardoublepage%
 % \include{chapters/papers/XP/XP}
