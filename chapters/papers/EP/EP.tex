@@ -98,7 +98,7 @@ Apart from direct release of genetic traces from plants and arboreal organisms, 
 \begin{figure*}[tb]
 % \begin{figure}[tb]
     \centering
-    \includegraphics[width=\linewidth]{figures/01_overview.pdf}
+    \includegraphics[width=\linewidth]{chapters/papers/EP/figures/01_overview.pdf}
     
     \caption{Overview of drone-based surface \gls{eDNA} sampling strategy and analysis in the lab. The drone is equipped with the probe (1) before take-off (2). The drone flies above the canopies to reach the sampling site (3), where the probe is lowered into the canopy and swabs against vegetation (inset) to collect \gls{eDNA}. The drone returns and lands (4). The probe is removed (5), and subsequently the DNA is extracted (6) and amplified (7) before sequencing (8). A bioinformatics pipeline (9) is employed to create the taxonomic assignments and results (10), here shown as a cladogram with the \glspl{MOTU} identified for all 10 collected samples during the XPRIZE Rainforest Semi-Finals.}
     \label{fig:1-intro}
@@ -124,7 +124,7 @@ Accessing terrestrial ecosystems, particularly forests, presents challenges due 
 \begin{figure*}[tb]
 % \begin{figure}[tb]
     \centering
-    \includegraphics[width=\linewidth]{figures/02_working_principle.pdf}
+    \includegraphics[width=\linewidth]{chapters/papers/EP/figures/02_working_principle.pdf}
     \caption{Overview of eProbe surface sampling. (A) \gls{eDNA} collection schematic for descent and ascent of the probe with the transfer of \gls{eDNA}-particles from vegetation through touch, (B) Probe design with collector material, stiffeners and probe mount, (C) Complete drone sampling solution with winch, onboard computer and probe, (D) Image of the drone hovering and deploying the probe into the canopy, (E) Images showing the probe interacting with and swabbing the vegetation on the descent ($t=1s,3s$) and ascent ($t=14s,15s$).}
     \label{fig:2-working-principle}
 \end{figure*}
@@ -170,7 +170,7 @@ We studied the effect of the probe stiffness and geometry on the penetration cap
 \begin{figure*}[tb]
 % \begin{figure}
     \centering
-    \includegraphics[width=\linewidth]{figures/03_eprobe_results_combined.pdf}
+    \includegraphics[width=\linewidth]{chapters/papers/EP/figures/03_eprobe_results_combined.pdf}
     \caption{Probe characterization. (A) Experimental setup for penetration and retrieval tests with inset showing worst and best case probe orientation, (B) Success rate (n=10) for the probe passing an obstacle for different probe stiffnesses (low $t_1$, medium $t_2$, high $t_3$), material locations (top, middle, bottom) and obstacles spaced $w=5cm, 10cm$ apart, for ascent and descent (C) Experimental setup with a load cell to measure the peak interaction force of the probe with the beams during the ascent and (D) Peak interaction force of the probe with the obstacles spaced $w=5cm$ and $w=10cm$ apart for different probe stiffness (low $t_1$, medium $t_2$, high $t_3$) and collector material location (top, middle, bottom) for upward motion.}
     \label{fig:3-probe-results}
 % \end{figure}
@@ -197,7 +197,7 @@ The operator can retry to overcome the vegetation with the previously mentioned 
 \begin{figure*}[tbh]
 % \begin{figure}[tb]
     \centering
-    \includegraphics[width=\linewidth]{figures/04_control.pdf}
+    \includegraphics[width=\linewidth]{chapters/papers/EP/figures/04_control.pdf}
     \caption{(A) Control logic to detect and handle impacts and entanglements, (B) Sequence showing the probe impact dense vegetation, being raised and eventually penetrate through the vegetation, (C) Tether length and interaction force for surface probe ES006e with impact and entanglement thresholds, $F_i$ and $F_e$ respectively.}
     \label{fig:4-control}
 % \end{figure}
@@ -251,7 +251,7 @@ The system was able to successfully sample down to 40.1 meters (ES011e) from dro
 % \begin{figure}[tb]
 \begin{figure*}[tb]
     \centering
-    \includegraphics[width=\linewidth]{figures/05_motus.pdf}
+    \includegraphics[width=\linewidth]{chapters/papers/EP/figures/05_motus.pdf}
     \caption{Proportion of molecular operational taxonomic units (MOTUs) within each sample classified by Phylum (A) and Class (B). Numbers refer to the absolute number of \glspl{MOTU}. \gls{eDNA} analyses with COI recovered mainly Arthropoda and in particular Insecta and Arachnida.}
     \label{fig:5-barplot}
 \end{figure*}
@@ -271,7 +271,7 @@ iNEXT rarefaction analysis suggests that approximately 75 probes are needed to r
 % \begin{figure}[tb]
 \begin{figure*}[tb]
     \centering
-    \includegraphics[width=\linewidth]{figures/06_corr.pdf}
+    \includegraphics[width=\linewidth]{chapters/papers/EP/figures/06_corr.pdf}
     \caption{(A) Density plots (diagonal) and correlation of each variable (scatterplot and statistics respectively below and above the diagonal). (B) Results of the generalized linear model for the predicted DNA concentration and \gls{MOTU} richness for the number of touches and the mean maximum sampling depth (mMSD). In each plot, the R2 of the model and P-values relative to the variable tested are reported. *, ** and *** denote statistical significance levels of 0.05, 0.01 and 0.001.}
     \label{fig:6-corr}
 \end{figure*}
@@ -329,11 +329,12 @@ This work was funded by the Swiss National Science Foundation under Eccellenza G
 %% classes.  This should be given within the "acknowledgement"
 %% environment, which will make the correct section or running title.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{acknowledgement}
+% \begin{acknowledgement}
+\section{Acknowledgement}
 
 The authors thank the Zoo Zürich, the XPRIZE Foundation and the National Parks Board, Singapore. We thank Eppendorf for the donation for in kind equipment and consumables and Patagonia for the backpack and sleeves for carrying our portable lab equipment to the field. We also thank Danwei Huang for permitting access to his laboratory for molecular work, and the National Supercomputing Centre (NSCC), Singapore, for permitting use of their computational resources for eDNA analysis. We also thank Gian Andri Morf and Andri Bisaz for initial work on the winch and probe system.  We also thank our entire XPRIZE Rainforest team ETH BiodivX for the collaborative spirit and feedback during the development of our solutions to improve biodiversity discovery and monitoring of rainforest.
 
-\end{acknowledgement}
+% \end{acknowledgement}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Notes (Conflict of interest
@@ -350,8 +351,8 @@ M.L. and L.P. cannot provide the exact methodology for the extraction method bec
 %% Notice that the class file automatically sets \bibliographystyle
 %% and also names the section correctly.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\footnotesize% make footnotesize
-\bibliography{references}
+% \footnotesize% make footnotesize
+% \bibliography{references}
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -361,26 +362,24 @@ M.L. and L.P. cannot provide the exact methodology for the extraction method bec
 %% be automatically moved as appropriate.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\begin{tocentry}
-%
-\includegraphics[width=\linewidth]{figures/00_graphical_abstract.pdf}
-%
-% Some journals require a graphical entry for the Table of Contents.
-% This should be laid out ``print ready'' so that the sizing of the
-% text is correct.
-%
-% Inside the \texttt{tocentry} environment, the font used is Helvetica
-% 8\,pt, as required by \emph{Journal of the American Chemical
-% Society}.
-%
-% The surrounding frame is 9\,cm by 3.5\,cm, which is the maximum
-% permitted for  \emph{Journal of the American Chemical Society}
-% graphical table of content entries. The box will not resize if the
-% content is too big: instead it will overflow the edge of the box.
-%
-% This box and the associated title will always be printed on a
-% separate page at the end of the document.
-%
-\end{tocentry}
-
-\end{document}
+% \begin{tocentry}
+% %
+% \includegraphics[width=\linewidth]{figures/00_graphical_abstract.pdf}
+% %
+% % Some journals require a graphical entry for the Table of Contents.
+% % This should be laid out ``print ready'' so that the sizing of the
+% % text is correct.
+% %
+% % Inside the \texttt{tocentry} environment, the font used is Helvetica
+% % 8\,pt, as required by \emph{Journal of the American Chemical
+% % Society}.
+% %
+% % The surrounding frame is 9\,cm by 3.5\,cm, which is the maximum
+% % permitted for  \emph{Journal of the American Chemical Society}
+% % graphical table of content entries. The box will not resize if the
+% % content is too big: instead it will overflow the edge of the box.
+% %
+% % This box and the associated title will always be printed on a
+% % separate page at the end of the document.
+% %
+% \end{tocentry}
