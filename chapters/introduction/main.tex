@@ -21,13 +21,14 @@
 
 % Accessible, Scalable, and Automatable Direct Data Collection using UAVs in Forest environments and agriculutral fields
 
+%Democratizing Scalable Direct Data Collection from Challenging Environments using Aerial Robots
 % 
 %_________________________________
-% => how to collect data from inaccessible environments => autonomous/user-friendly sensor placement and collection with UAVs
 
 %(context: biodiveristy + climate crisis) data collection is necessary to make informed decisions and evaluate effitiveness of measuers [no agri yet, maybe light intro with statistics ]
-\section{The Case for Environmental Data} %2-3 pages
-% why is environmental data needed?
+%Roter Faden: should focus on the points from beginning: some locations are difficult to access, need direct data, need to be scalable, and should be easy to use. 
+\section{The Case for Environmental Data} %2-3 pages (actually should be more 1-2)
+% why is environmental data needed? => lots of problems/crises, need data to assess
 % => 
 % - Context: biodiversity + climate crisis, rapid species decliene ,loss of habitat, increase of invasive species. Currently on track to loss a lot of different species.
 %seems already plenty of data but most data is actually based on estimates/projections or on single instances from public open source datasets (that are a few decads old) => need up-to-date modern data on actual information (biodiversity, pests, env data)
@@ -35,43 +36,68 @@
 % data collection is necessary to make informed decisions and to evaluate effectiveness of measures
 % also in the context of agriculture, more data has resulted in smart farming practices (ie remote senisng), increasing yield, reducing pesticide use, etc
 % to drive informed decisions that optimize efficiency for farming, to optimize land use, reduce crop loss due to pests, reduce pesticides and fertilizer need data. (what data ====>)
+%%11-10: after this section, should be clear WHY we need environmental data 
 
-The natural world is in crisis. Current climate and biodiversity crises \cite{Pereira2024, Weiskopf2024, Pimm2014, Portner2023} underscore the necessity and current lack of comprehensive and scalable environmental and biodiversity monitoring \cite{Gonzalez2023a, McRae2017, Gonzalez2016, Mora2011}. 
-XX species have declined since XX, with ... extinct etc. Deforestation has reached unprecidented levels, with XX percent of old-growth rainforests expected to disappear before XX \cite{}.
-Biodiversity, one of the most important contributors to ecosystem services, and an essential component of a human livable planet is in decline, with XX spceise ..
+
+%feb.2023-jan2024
+The natural world is in crisis. 
+Earth is now past six of the nine planetary boundaries \cite{Richardson2023} established to measure the stability and resilience of the Earth, marking the crossing of a critical threshold for increasing risks to people and ecosystems.
+There is the obvious changing climate, with 2023 marking the first 12 month period to exceed 1.5\degree C above pre-industrial levels \cite{Service2024}, the goal which was set in the 2015 Paris Agreement \cite{Delbeke2019} to avoid or lessen the worst climate harms. Instead, with currently implemented policies, we are on track to reach 3.2\degree C \cite{Report2023} warming, exceeding even pessimistic projections. The effects can already be felt today, with  increasing severity and frequency of extreme weather events, wildfires, droughts, hurricanes, and rising sea levels \cite{Report2023}. 
+There are also the direct consequences for the inhabitants of the natural world: mass extinctions and population reductions at unprecedented rates; now dubbed the "sixth mass extinction" \cite{Ceballos2015} or "biological annihilation" \cite{Ceballos2017} with not only entire species, but entire genera being wiped out\cite{Ceballos2023}, driven exclusively through human activity. Biodiversity, one of the most important contributors to ecosystem services, and an essential component of a livable planet for humans, is in decline, driven both directly by anthropogenic pressures with habitat loss due to land use change, and indirectly through climate change. Over the last 50 years, the average size of monitored wildlife populations has shrunk by 73\% \cite{WWF2024}. The current rate of extinction of species is 100-1000 times that of the fossil record \cite{Pimm2014, Ceballos2015}, with an estimated one million plant and animal species threatened with extinction \cite{ipbes2019}.
+The drastic effect this has can be seen on land, for example with a net loss of 3 billion birds or 30\% in North America \cite{Rosenberg2019} or obscene shrinking of insect populations (75\% reduction in airborne insect biomass over three decades in Germany, irrespective of habitat type or land use \cite{Hallmann2017}), to the cascading effects insect loss has on ecosystems \cite{Kehoe2021}. Also in the oceans with marine life, which are already closer to their thermal limits \cite{Pinsky2019}.
+Over 88\% of monitored EU fishstocks are overfished, with the number of fish landed decreasing significantly (94\%) compared to more than a century ago, despite increased fishing technology, newer boats, and increased effort \cite{Thurstan2010}.
 Biodiversity loss has even been linked to reducing global terrestrial carbon storage \cite{Weiskopf2024}, exacerbating and amplifying carbon emissions and climate change, as well as cascading effects across ecosystems \cite{Rosenberg2019, Ceballos2015}, affecting human social and economic prospects \cite{Frank2024, Portner2023}.
 
-Forests in particular stand out as biodiversity hotspots, they home to over half of the world's vertebrate species \cite{Pillay2022} as well as providing essential ecosystem services and climate regulation \cite{Brockerhoff2017}. However, they are usually remote, expansive, tall, cluttered, and thus challenging to access for data collection, even though this data is essential to understand and protect forest functioning and their impact on biodiversity, climate, and overall ecosystem health. This is especially true of tree canopies, which contain an estimated XX\% of the biodiversity in forests.[CITE] Such data is also vital to evaluate the success of strategies aimed at mitigating climate change and reducing biodiversity loss \cite{Gonzalez2023}, especially within the context of the United Nations (UN) Sustainable Development Goals (SDGs). However, concrete data, especially on biodiversity, ecosystems, and climate are still lacking \cite{Goessmann2023} and costly to collect using conventional, mostly manual methods \cite{Cannon2021, UNEnvironment2019}. 
+% I dunno if this transition makes sense, I would rather focus first on the biodiveristy, then this (ie huge decilen, but also lots of undiscovered stuff, should discover. But of the monitored stuff, bias
+
+Current climate and biodiversity crises \cite{Pereira2024, Weiskopf2024, Pimm2014, Portner2023} underscore the necessity and current lack of comprehensive and scalable environmental and biodiversity monitoring \cite{Gonzalez2023a, McRae2017, Gonzalez2016, Mora2011}. 
+Reliance on existing limited data sources perpetuates biases, and hides trends from underrepresented populations, usually from the tropical regions. Proportional weighting indicates steeper and darker trends: global population declines in vertebrate species of 58\% rather than 20\%, for instance\cite{McRae2017}. Moreover, this also shows the importance, and current limited availability of, accurate, up-to-date, and representative environmental and biodiversity data. This lack of data hinders our ability to successfully  formulate, implement, and monitor solutions for these problems. 
+%TODO LIST WHY data is needed
+
+%Cant understand what you cant measure, currently not enough data (env. + biodiv, need to measure more)
+
+%Figure: why needed? show rates and whwich different ecosystems destroyed/ineffictev methods to recover
+
+% forests stand out for their importance to biodiversity, and also to the level at which these ecosystems are being destroyed/degraded
+
+
+Forests in particular stand out as biodiversity hotspots, they home to over half of the world's vertebrate species \cite{Pillay2022} as well as providing essential ecosystem services and climate regulation \cite{Brockerhoff2017}. They are also under grave threat: deforestation has reached historically unprecedented levels, with one third of primary tropical forests gone \cite{Krogh2021} and 38\% of remaining forests degraded by fire, timber extraction or drought \cite{Lapola2023}.
+
+Forests are usually remote, expansive, tall, cluttered, and thus challenging to access for data collection, even though this data is essential to understand and protect forest functioning and their impact on biodiversity, climate, and overall ecosystem health. This is especially true of tree canopies, which sustain an estimated 40\% of all existing species \cite{Ozanne2003d}, but are most challenging to access. Such data is also vital to evaluate the success of strategies aimed at mitigating climate change and reducing biodiversity loss \cite{Gonzalez2023}, especially within the context of the United Nations (UN) Sustainable Development Goals (SDGs). However, concrete data, especially on biodiversity, ecosystems, and climate are still lacking \cite{Goessmann2023} and costly to collect using conventional, mostly manual methods \cite{Cannon2021, UNEnvironment2019}. 
 
 %RAM paper intro%
 % Global agriculture faces unprecedented pressures to feed a growing population, cater to increasingly selective consumer choices, ensure economic viability for the roughly one billion farmers in the world, ensure enough yield with increasingly unpredictable and extreme climate events, and also reduce environmental impact~\cite{McGreevy2022}. Through sustainable intensification (SI), large global change impacts of agriculture can be reduced while increasing yields~\cite{Cassman2020, Pretty2018, Garnett2013}. Many SI strategies leverage productivity gains from increasing biodiversity in farm fields, which can improve land area use and conserve soil through better space-filling. However, the cultivation of such heterogeneous SI fields is more labor-intensive per area than for homogeneous monoculture-based approaches, and not amenable to standard automation strategies for monocultures, which require bare soil and synchronized yields. Smart and adaptive automation is thus critical to upscale SI and provide more food on less land, with fewer negative impacts~\cite{Sparrow2021, Basso2020}.
-% A key challenge for SI is the early detection of plant stress for rapid and effective interventions to reduce crop losses, and to optimise the application of pesticides and fertilisers, thereby reducing environmental impact. Precision agriculture thus far has mainly relied on visual imaging technologies such as multi- or hyperspectral cameras to detect plant stress~\cite{Tsouros2019, Toth2016, Singh2020}. A current limitation is that imaging is best suited to identify plant responses to stress at a later stage, i.e., when plants have already undergone substantial damage, because visual damage appears hours or even days after the stress event~(Figure~\ref{fig-1-overview}A)~\cite{mahlein_hyperspectral_2018}. However, plants respond to stress within seconds to hours by producing phytohormones and bioactive chemicals from a variety of pathways~\cite{schuman_layers_2016}. Some of these have sufficiently low vapor pressure to be volatile under standard conditions on Earth, and thus can be perceived at a distance. One of the best-studied phenomena in the field of plant-insect interactions is the production of specific plant volatile blends upon herbivory (10's to 100's of compounds) which indicate the timing and nature of the herbivore as well as the severity of attack~\cite{howe_plant_2008, dicke_evolutionary_2010}. Plant volatiles thus serve as important indicators of plant condition prior to visible or severe damage, and also can indicate the success or failure of some SI strategies. Plant volatiles have been used by insects and other organisms over millions of years to forage on plants and assess plant status, but they are still not exploited for precision agriculture~\cite{turlings_tritrophic_2018}. Volatiles represent an interesting alternative or complement to imaging for early and precise detection of stress and subsequent application of mitigation strategies to reduce yield loss. 
+% A key challenge for SI is the early detection of plant stress for rapid and effective interventions to reduce crop losses, and to optimise the application of pesticides and fertilisers, thereby reducing environmental impact. Precision agriculture thus far has mainly relied on visual imaging technologies such as multi- or hyperspectral cameras to detect plant stress~\cite{Tsouros2019, Toth2016, Singh2020}. A current limitation is that imaging is best suited to identify plant responses to stress at a later stage, i.e., when plants have already undergone substantial damage, because visual damage appears hours or even days after the stress event~(Figure~\ref{fig-1-overview}A)~\cite{mahlein_hyperspectral_2018}.
 
-Agriculture is essential to feed the world's growing  population and provides livelihoods to XX people, yet it also accounts for XX percent of global greenhouse gas emissions, is a major driver for deforestation due to land-use change. This is only slated to increase due to increasing population sizes, changing consumption patterns and more selective consumer choices. This leads to the trade-off of increasing yields while simultaneously reducing environmental  impact~\cite{McGreevy2022} %CHECK citation
+These changes in the climate and natural world will not only indirectly affect humans through loss of ecosystem services, but also directly, for instance in agriculture, where temperature increases reduce the global yield of the four main crops constituting two-thirds of human caloric intake: wheat, rice, maize and soybean \cite{Zhao2017}.
+
+%not only forests, also agriculutre, essential for .... and covers over XX land surface area. Essential to keep land productive, yet support or at least limit damage to local biodiveristy. , for instance SI. Need data
+
+Agriculture is essential to feed the world's growing  population and provide livelihoods to the roughly one billion farmers in the world, yet it also accounts for 10-20\% of  global greenhouse gas (GHG) emissions \cite{Gert-JanNabuurs2022}, over 40\% of all land is used for agriculture, 90\% of global deforestation is due to agriculture, as well as 70\% freshwater use \cite{WWF2024}. %add greenhouse gas emssions
+The catastrophic decline of bird populations in Europe is also attributed to pesticide use from intensive agricultural land use \cite{Rigal2023}.
+This will only increase with rising population sizes, more selective consumer choices, and increasing purchasing power driving increasing meat consumption (60\% of agricultural greenhouse gas emissions are associated with meat, and meat emits 20-30 times GHGs for the same protein content as from plant-based sources)\cite{Xu2021, Poore2018}. This leads to the trade-off of increasing yields while simultaneously reducing environmental  impact~\cite{McGreevy2022}.
 % need to maximize yield, since more food is needed, but should also reduce environmental impact. possible through SI, but since more effort therefore should minimize crop losses. 
 % Through sustainable intensification (SI), large global change impacts of agriculture can be reduced while increasing yields~\cite{Cassman2020, Pretty2018, Garnett2013}. Many SI strategies leverage productivity gains from increasing biodiversity in farm fields, which can improve land area use and conserve soil through better space-filling. However, the cultivation of such heterogeneous SI fields is more labor-intensive per area than for homogeneous monoculture-based approaches, and not amenable to standard automation strategies for monocultures, which require bare soil and synchronized yields. Smart and adaptive automation is thus critical to upscale SI and provide more food on less land, with fewer negative impacts~\cite{Sparrow2021, Basso2020}.
 % A key challenge for SI is the early detection of plant stress for rapid and effective interventions to reduce crop losses, and to optimise the application of pesticides and fertilisers, thereby reducing environmental impact. 
-One method for reducing the environmental impact of agriculture is through sustainable intensification (SI). The main principles of SI are designed to increase yield and leverage biodiversity to maintain or increase yields while reducing environmental impact by fostering biodiversity...(e.g. agroforestry, intercropping, no tilling
 
-% Of these emissions, XX percent is directly related to the production of meatlcattle. includes the increased consumption of meat around the world, especially with changing consumer choices in countries with increasing purchasing power. While some inroads have been made with alternative sources of protein, such as XX, and also lab-grown meat XX, these have yet to be economically scaled to the point where their impact is felt.
-It is estimated that XX percent of crops are  lost due to pests, highlighting the need for early detection of pests to avoid crop loss. Early detection of infestiations can not only reduce crop losses, but also limit the amount of applied pesticides, which will also have postiive ripple effects on local biodiveristy such as the pollinators and other insect populations. 
+One method for reducing the environmental impact of agriculture is through sustainable intensification (SI). The main principles of SI are designed to increase yield and leverage biodiversity to maintain or increase yields while reducing environmental impact by fostering biodiversity, for instance through agroforestry, intercropping or reduced tilling. Between 20-40\% of global crop production is lost due to pests \cite{Savary2019}, highlighting the need for early detection. A central component of SI and also conventional agriculture, is to reduce crop losses due to pests, while limiting the amount of pesticide used. Early detection of infestations can not only reduce crop losses, but also limit the amount of applied pesticides through targeted and early intervention, which will have positive ripple effects on local biodiversity, especially for pollinators and other insect populations. 
 %This will need to rely on novel data sources, such as volatiles, since remote sensing detects too late.
 
-The challenge to conserve, restore and preserve natural ecosystems and their function while also maintaining sustainable land use for human use such as for agriculture without detriment to overall biodiversity is hampered by a lack of actionable data. Data has limited spatial/temporal resolution, usually based on estimates, and has challenges to reach certain locations (e.g. forest canopies). Usually very manual and labor intensive that does not scale to the dimensions needed to monitor ecosystems. 
+The challenge to conserve, restore and preserve natural ecosystems and their function while also maintaining sustainable land use for human use such as for agriculture without detriment to overall biodiversity is hampered by a lack of actionable data. Data either has limited spatial or temporal resolution, due to cost or labor intensive collection, or is missing  or limited from areas which are difficult to access, for instance forest canopies. Data collection is usually very manual and labor intensive \cite{Cannon2021}, which does not scale to the dimensions needed to monitor natural ecosystems such as rainforests or fields for agriculture. 
 
-Perhaps the clearest such example is the number of threatened species on the IUCN RedList. Of the 163,040 species assessed by the IUCN, almost a third, over 45,000, are deemed to be threatened. Yet the estimated number of species lies over 2 million, meaning that less than 8\% have been assessed \cite{IUCN2024}.
+Perhaps the clearest such example is the number of threatened species on the IUCN RedList. Of the 163,040 species assessed by the IUCN, almost a third, over 45,000, are deemed to be threatened. Yet the estimated number of species lies over 2 million, meaning that less than 8\% have been assessed \cite{IUCN2024}, and undiscovered species face a higher extinction risk than known ones \cite{Liu2022a}.
 
-However, the general decline of biodiversity and crisis in natural ecosystems have spurred governments to action, with the UN passing the SDGs, which beside human-centric issues such as health, poverty, gendter equality ... also places great importance on the natural world, with SDGs such as Life on Land, Life on Water, and XX.
+% However, the general decline of biodiversity and crisis in natural ecosystems have spurred governments to action, with the UN passing the SDGs, which beside human-centric issues such as health, poverty, gendter equality ... also places great importance on the natural world, with SDGs such as Life on Land, Life on Water, and XX.
 
-However, most countries are not on track to meet them, and also data is sparse. [CITE]
+% However, most countries are not on track to meet them, and also data is sparse. [CITE]
 
-The list of previous statistics can lead to the question whether more data is truely needed. However, scalable, relevant data (at right scales, up-to-date) is needed at all levels (from small shareholder farmer, to NGO, to forest manager, to governments). to make the right decisions. These data are also essential to ensure that the current XX spent/estimated to be needed to address the SDGs are spent in a fashion that actually allows them to achieve their goals. Data is needed to monitor the progress and success of efforts to restore and conserve ecosystems. 
+% The list of previous statistics can lead to the question whether more data is truely needed. However, scalable, relevant data (at right scales, up-to-date) is needed at all levels (from small shareholder farmer, to NGO, to forest manager, to governments). to make the right decisions. These data are also essential to ensure that the current XX spent/estimated to be needed to address the SDGs are spent in a fashion that actually allows them to achieve their goals. Data is needed to monitor the progress and success of efforts to restore and conserve ecosystems. 
 
-In short, up-to-date biodiversity and environmental data is essential to enable informed decisions and validate the success of implemented strategies.
+In short, informative, comprehensive, and up-to-date biodiversity and environmental data is essential to enable informed decisions, monitor progress, and validate the success of implemented strategies to restore and conserve ecosystems and detect pests, at all scales, from smallholder farmers, conservation NGOs, to governments. 
 
-% Such statistics now seem so commonplace that they seem barely to deserve more than a glanceover, yet it is worth it to have a look at the implications of such numbers. First, these statistics imply that such numbers are based on data, hard incontrovertible data. However, actually most of these statistics /cite are based on projections or outdated publically available datasets. That is not to say that these numbers are not correct or worrying, on the contrary, usually such predictions are more conservative than the reality /cite. The overwhelming abundance of such statistics might also raise the question of whether more data is actually needed, since the trends are clear and the course of action as well (reduced carbon emissions, reduced deforestation, alternative sources of protein, since farming and cattle raising cause XX percent of the world's greenhouse gas emissions as well as one of the primary drivers for deforestation and land use change. Such statistics are not only a call to action, but also a verification that the undertaken steps are leading to the desired outcome. Unfortunately, direct actions taken to address an immediate problem tend to have unintended side-effects, with complex systems and many interdependencies making the results harder to predict.  %% examples?
-% Natural systems are incredibly complex, and ecosystems have many interdependencies, which predicting positive outcomes challenging. Perhaps a good example of this are carbon credits, where a complex problem has been simplified to a single number, g of carbon, with corresponding min/maxing resulting in monotree farms that do little to promote biodiversity and do not stand the test of time. 
-% % need data to check (e.g. carbon sink)
+% where does data come from?
+% is it actually hard data or only from some outdated publically available datasets? => estimates usually conservative
+% need to monitor results of action, sometimes unintended side consequences, ie carbon credits, but overoptimizing carbon with no side complimentary benefits to biodiversity, thus less effective than it could be 
 
 
 %Current methods do not allow for full comprehensive picture.  [also include agriculutre]
@@ -88,55 +114,66 @@ In short, up-to-date biodiversity and environmental data is essential to enable 
 % more challenging to collect since have to directly capture from the environment: hard to access environments, difficult to scale, challenging for the end-user to use, 
 % ==>user-friendliness as a design consideration, robots to enable access to new locations and data modalities, and also open the opiton for automation and scalability.
 
-% - Problem: Current data collection methods are inadequate, do not enable right type of data collection, cannot access locations, or do not cover temporal or spatial scales needed for proper data analysis. 
+% - Problem: Current data collection methods are inadequate, do not enable "right" type of data collection, cannot access locations, or do not cover temporal or spatial scales needed for proper data analysis. 
 % e.g. mostly remote sensing, also for agriculture. also in forests, mostly use satellite data, in person very difficult access 
 % different data modalities are needed for full image (ie challenging to assess biodiversity from satellite images
 % collected data types are complimentary to remote sensing
 % needs to be automated since pure manual sampling is cost prohibitve ( maybe streamlined, reduced human effort
 %
+% takeaway=> should collect direct data, ie volatiles, edna, close-up images and sensor data  directly from the source
 
-Currently, most scalable data used for environmental, biodiversity monitoring or pest detection relies on indirect, passive, observational data. For agriculture this includes visual imaging technologies such as multi-or hyperspectral data, captured from satellites, aircraft, or UAVs [CITE]. 
-These methods have a high spatial resolution, and  are clearly very scalable, (Planet Labs' satellites create a full RGB map of XX km every day), but they are also relatively low in information density.  To take the case of pest detection, while infestations can be detected through leaf damage with different spectra [cite], they require detectable damage, which limits the time of detection until after bulk damage has occured. Similarly for biodiversity of environmental data, estimates on population densities and suitability of locations [cite loic fish] can be made, but these methods provide estimates and do not provide detailed grounded local information. 
+Currently, most scalable data used for environmental, biodiversity, or crop monitoring relies on indirect, or passive observation. For agriculture and tree species identification this includes optical imaging technologies such as multi-or hyperspectral, thermal, or light detection and ranging (lidar) data, captured from satellites, aircraft, or UAVs \cite{Tsouros2019, Toth2016, Singh2020, Mahlein2018}. 
+These remote sensing methods are clearly very scalable, with large spatial coverage, but with a lower spatial resolution. The further away from the object of interest data is collected, the lower the spatial resolution, and thus also lower relative information density. 
+Conversly, collecting data closer to the source results in higher spatial resolution and higher information density, but reduced spatial coverage. For instance, Planet Labs' satellites provide 300 million square km multispectral data at 4m resolution daily \cite{Lab}, whereas UAVs can provide data with cm resolution, but only a few square km.
+For applications in precision agriculture, multi- or hyperspectral data can be used to monitor crop health such as water stress as well as detect foliage damage through pathogen infestations \cite{Mahlein2018}. However, for pest detection, crops need to exhibit detectable symptoms, which limits the time of detection until after the pathogen has spread enough to cause observable damage. 
+ % While certain species identifications can be made from top-down imagery, such as for trees, this data cannot measure the rich full biodiversity on the ground, especially for smaller animals, insects or plants. 
+Indirect data for biodiversity is more limited, since remote sensing can only provide limited information on the local biodiversity. Examples include tree species identification from top-down imagery \cite{}, or detecting indicators or proxies for biodiversity, such as leaf cover or vegetation density \cite{Skidmore2015}, which can then be used in fusion approaches, but this data cannot measure the rich full biodiversity on the ground, especially for smaller animals, insects or plants. 
+For example, when combining locally collected eDNA data with satellite imagery, estimates on fish population densities and suitability of habitat locations from satellite data can be made\cite{Zong2024}. However, such methods require prerequisite local data, and can only provide estimates, not verified, detailed and grounded local information. For environmental monitoring, simple indicators such as land surface temperature can be measured using satellites and provides valuable data on the macro level of potential habitats and living conditions over time, but they cannot capture  subtle local variations, or microclimates \cite{Frenne2021, Zellweger2019AdvancesSensing}.
 
 %FIGURE
 % information density vs scalabitiy 
 % ie have information density on one axis, and spatial resolution/scalability on the other
+%not spatial resolution, since usually resolution is lower than when you are closer
+
+% ideally also have SOTA comparison for access? ie where other solutions exist
 
 
-Such information can be collected through direct, interactional data collection. These are data which require either physical samples taken from the point of interest, or otherwise localized measurements which require interaction with the environment or objects in the environment. For instance, placing sensors at different heights within a tree to measure microclimates, collecting physical samples of DNA for biodiversity assessment, or close-up image capture. In contrast with indirect methods, direct data have reduced spatial resolution, since the data collected is necessarily  more localized, but provide a higher information density. Since collecting such localized measurements over larger areas becomes time and cost prohibitive, direct data methods are less scalable and have reduced spatial resolution, but  a higher temporal resolution and Since these localized measurements can be taken as often as desired vs. the fixed resolution from satellites for instance. Since direct data methods are directly at the data source, they have a much higher information density, allowing more detailed information (direct env. information, individual species information).
-Current biodiversity assessments usually follow this approach, either with manual detections (visual inspections in the field, sample collections, etc) or through more automated methods, that still require access to the field, such as with camera traps or audio recorders (audiomoths).
-To cover the same area these direct methods are naturally more time and cost intensive, limiting the area covered with the same effort. 
-however, probably not need as dense, ideally in future fuse both.
- Complimentary data sources also needed. 
+Such information can be collected through direct, interactional data collection. Direct data are localized measurements which require access and interaction with the environment or objects in the environment, for instance physical samples. Examples include, placing sensors at different heights within a tree to measure microclimates, collecting physical samples of DNA for a more comprehensive biodiversity assessment, or close-up image capture with camera traps. In contrast with indirect methods, direct data have increased spatial resolution and information density with reduced spatial coverage. Since the data are collected closer to the source they are necessarily more localized, with a higher information density. However, since collecting such localized measurements over larger areas becomes time and cost prohibitive, direct data methods are less scalable and have reduced spatial coverage. These localized measurements can be taken as often and as close to the object of interest as desired, so  they have a higher temporal and spatial resolution. compared with the fixed resolution and data capture rate of satellites, for instance. The proximity of direct data collection methods to the data source results in a much higher information density, both in terms of the types of information collected, as well as the level of detail. For instance, more information can be obtained by physical samples of single leaves, to the branch or tree level with images from UAVs, to the aggregated pixel approach for forest areas from top-down satellite imagery.
+% (direct env. information, individual species information).
+Current biodiversity assessments generally follow this direct data approach, either with manual detections (visual inspections in the field, specimen collections, etc) or through more automated methods by placing sensors such as camera traps or audio recorders for bioacoustics \cite{}. These methods still require direct access to the field and labor-intensive placement and retrieval of the sensors.
+
 
 % forest data collection methods
- However, currently, direct data collection are largely manual, which limits the coverable area. In addition, certain locations cannot be reached and the methods do not scale to the spatial and temporal dimensions needed for agriculture or to monitor expansive and remote ecosystems such as forests. This invites the use of automation to improve scalability and robots to enhance accessibility. %reaching new locations.
- 
-
-For instance, forests are biodiversity hotspots, but very challenging to access and study. Current methods of access include expensive and invasive fixed infrastructure, or unscalable and expensive manual labor intensive operations, such as climbers. 
+For instance, forests are biodiversity hotspots, but very challenging to access and study \cite{Pillay2022, Ozanne2003d, }. Most current direct methods of access are highly manual, and thus expensive and labor intensive. Examples include expensive and invasive fixed infrastructure with limited reach, such as canopy cranes, or unscalable manual labor intensive operations, such as climbers for sample collection or sensor placement, as well as access from below with ladders or telescoping poles \cite{Cannon2021}. 
+More indirect methods include UAV data capture from above, for instance multispectral data.
 %Go more into detail about the current manual  different methods, maybe even including the comparison figure from paper.
 % direct data collection modalities:
 % placed sensors
 % close-up multispectral?
 % eDNA
-Sensors placed within the region of interest, for instance tree canopies, can provide information rich long term localized data. However, placing and collecting sensors in many environments, such as tall tree canopies is still challenging and has high associated risks and costs.
-A challenge for multispectral and hyperspectral data analysis methods is resoultion. While spectral analysis of individual leaves in a lab setting may detect infections and pathogens relatively early, applying these same methods to data collected from dozens of meters above the canopy requiers symptoms to be much more visible, with substantial damage incured before successful detection. Close-range multispectral detections could provide a direct data method for such data, but challenging to capture on a camera and systems level.
-eDNA has shown great promise for detecting overall aggregated biodiversity in ... and could present a new data modality for scalable biodiversity assessment in hard-to-reach ecosystems.
+
+%Environmental monitoring: 
+Information rich, long term, localized data for environmental monitoring can be collected from sensors placed within the region of interest, for instance tree canopies.
+% Sensors placed within the region of interest, for instance tree canopies, can provide information rich long term localized data for environmental monitoring. 
+However, manually placing and collecting many sensors in environments, such as tall tree canopies is still challenging and has high associated risks and costs.
+One major benefit of direct data collection is the ability to collect novel data modalities that can provide new insights. Existing biodiversity assessments can be invasive, such as with insect traps or tree fogging which collect physical specimens, or are heavily biased towards certain species or animals, such as camera traps or bioacoustic recorders. Environmental DNA (eDNA) is genetic material shed into the environment from organisms in the vicinity, for example through their feces, skin cells, hair, or saliva. Water eDNA sampling is well established \cite{}, and can present an aggregate view of biodiversity through the aggregation of DNA in watersheds after rainfall. However, this limits the localization of where specific DNA comes from and can overrepresent certain species, such as aquatic species. To get a more accurate snapshot of biodiversity, it is necessary to sample from different environments that may not have water bodies nearby, for instance also forests. Exploratory work has demonstrated collecting eDNA from trees \cite{}, but these approaches are still very limited to locations accessible from below. EDNA presents a noninvasive, informative data modality for detecting overall aggregated biodiversity in different environments, but scalable collection, especially in hard-to-reach ecosystems remains an open challenge.
+% EDNA has shown great promise for detecting overall aggregated biodiversity in a multitude of different environments and ecosystems \cite{}, and present a noninvasive, informative, and automatable data modality for scalable biodiversity assessment in hard-to-reach ecosystems. 
 
 % For environmental monitoring, enabling multispectral data collection within forest canopies can be especially usefull. 
 
-In the case of agriculture ....almost exclusively indirect, but need different  data for early detection. e.g. volatiles new direct data modality
+%RAM paper intro
+ % However, plants respond to stress within seconds to hours by producing phytohormones and bioactive chemicals from a variety of pathways~\cite{schuman_layers_2016}. Some of these have sufficiently low vapor pressure to be volatile under standard conditions on Earth, and thus can be perceived at a distance. One of the best-studied phenomena in the field of plant-insect interactions is the production of specific plant volatile blends upon herbivory (10's to 100's of compounds) which indicate the timing and nature of the herbivore as well as the severity of attack~\cite{howe_plant_2008, dicke_evolutionary_2010}. Plant volatiles thus serve as important indicators of plant condition prior to visible or severe damage, and also can indicate the success or failure of some SI strategies. Plant volatiles have been used by insects and other organisms over millions of years to forage on plants and assess plant status, but they are still not exploited for precision agriculture~\cite{turlings_tritrophic_2018}. Volatiles represent an interesting alternative or complement to imaging for early and precise detection of stress and subsequent application of mitigation strategies to reduce yield loss. 
+Precision agriculture relies almost exclusively on indirect remote sensing.
+% , but for true early pathogen detection, direct data capture is needed.
+For visual remote sensing to detect damage to the plant, there must be optically observable damage to the plant. This occurs hours to days after damage to the plant, after bulk damage has been incurred and potential infestations have spread. However, plants respond to stress within seconds to hours by producing phytohormones and bioactive chemicals from a variety of pathways~\cite{schuman_layers_2016}, some of which are volatile and can be collected at a distance. These plant volatiles present a unique indicator of both the type and severity of plant stress \cite{howe_plant_2008, dicke_evolutionary_2010}, prior to visible or severe damage to the plant, and could present a complementary solution in precision agriculture for early pest detection. While established approaches exist for sampling volatiles in laboratory conditions, sampling in field conditions is still challenging \cite{} % 15,16 from RAM
+Beyond this, to scale to the dimensions needed for agricultural fields, current manual volatile collection methods are not tenable and automation is essential. 
 %In the case of agriculture, precision or smart farming /cite almost exclusively refers to the utilization of additional external data sources in decesion making for pesticited or fertilizer application, for watering, or harvesting times. These data sources usually comprise of remote sensing, either from a UAV flown directly over the field, providing localized, up-to-date, and higher resolution data (multipsectral/thermal), or from commerical satellite feeds which provide coarser information. 
 % These data sources are all indirect, since they remotely collect data without direct access to the fields inquestion. This makes it easier to collect data at larger scales, but with less information value compared to direct data sources. 
-% One promising direct data source for agriculture are volatiles, which are ....
-% Directly collecting volatiles permits early detection of plant stress, more or less directly after the herbivore begins to feed on the plant. This collection is currently mostly done manually, with manual enclosing of plant headspace...  This direct data collection for agriculture is more challenging to collect, especially at larger scales, but is much more informative 
-% manual colleciton 
-% introduction to volatiles 
 
 
 % Similarly for biodiversity assessment, multiple platforms attempt to provide a silver bullet to the problem of biodiversity monitoring, essentially mainly relying on satellite data, exsisting databases, /cite {gainforest, restor} and sometimes a few localized measurements that are used for extrapolation /cite{that company}. While state of the art algorithms can have impressive performance (e.g. prediciting the habitita of certain fish, inferring the population number of xx). For reliable biodiversity assessments, data still needs to be collected in-situ, whether counting popluations of penguins directly with UAVs /cite, tracking with camera traps, or. ...
 
-eDNA has emerged in recent years as a promising tool for large-scale biodiversity assessment from single samples. By collecting 
+% eDNA has emerged in recent years as a promising tool for large-scale biodiversity assessment from single samples. By collecting 
 % eDNA intro : collect one sample, aggregated species (water), or manually aggregate through touching many surafecs 
 % challenge:difficult to collect
 
@@ -150,12 +187,24 @@ eDNA has emerged in recent years as a promising tool for large-scale biodiversit
 
 % remote data is great, since localized, rich in information, but a) more time/consuming to collect ie not scalable, b) challenging to collect depending on location (forests, agriculutural fields)   => robots?
 
+%summary
+
+% and automatable data collection for new data modalities such as volatiles or eDNA. These showcase the need for automatable robots to assist with data collection.
+ % Complimentary data sources also needed. 
+ % Direct data collection methods deliver informative and localized measurements, but face challenges for scalability, accessing certain locations, and reducing collection effort for new direct data modalities such as eDNA or plant volatiles.
+For current direct data collection methods, major challenges are accessibility for data collection from certain environments, scalability to reduce the relatively high effort needed for collection, and collecting the relevant data for a task.
+Currently, direct data collection are largely manual, which not only limits the coverable area, but also location accessibility. Especially for new data modalities such as eDNA or plant volatiles, the collection effort remains high. These methods do not scale to the spatial and temporal dimensions needed for agriculture or to monitor expansive and remote ecosystems such as forests. This invites the use of robots to enhance accessibility and automation to improve scalability while enabling the collection of new data modalities. %reaching new locations. 
+ %Problem: access, scalability, data modalities
+
 % current state of robots for direct data collection 
 % IE SOTA here
 % maybe different sections for biodiv/env/agri
 % robots provide opportunity to solve these issues, collecting complementary data modalities, scaling to sarger spatial/temporal, and providing access to more locations (also have the research questions later, so don't go too much in depth)
 % ie robots can enable scalable direct data collection from previously inaccessible locations
 \section{Robots for Data}
+%*% Direct data collection does not scale, some locations difficult to access, also more challenging from control for users to do indrect data collection
+% => use robots! show robots already being used for direct data collection (ie senor placement, etc, etc. SOTA)
+% manual edna, volatiles, limited location access (ie sensor placement not on outer canopy
 % ==>user-friendliness as a design consideration, robots to enable access to new locations and data modalities, and also open the opiton for automation and scalability.
 % robots can enable direct data collection.
 % using aerial robots can also enable access to challenging locations
@@ -164,14 +213,69 @@ eDNA has emerged in recent years as a promising tool for large-scale biodiversit
 % gradient of complete manual control (teleoperation) to complete automation
 % still currently never full manual control, always some offloaded ie control, PID, , or then waypoint missions maybe abstacle avoidance to full autonomy. 
 
+%FIGURE:
+% collage with different solutions, ie similar to snailbot, ie sensor placement, perching, other data collection
 
-Previously seen that direct data methods provide increased information richness, however, are morec challenging to collect and scale. This invites the use of robotse in particular aerial robots or UAVs, which have shown in recent years their ability to access remote and challenging enivorments. since they can be automated, can also be scaled.
+%new intro
+% robots have been used extensively for data collection, also in these enevironments, but mostly for indirect data (commerically). A few direct data coputre methods exist it literature (e.g. sensor,deleaves, etc.)
+% challenge/limitation of previous approaches is still the limitation of accessing some areas (e.g. agriculutural fields, outer canopy)
+% can be challenging to collect novel data types (volatiles, edna),
+%but most of all to make it user friendly.
 
-In forest environments, robots have seen increased use for direct data collection; for collecting physical samples [cite deleaves, mamba] etc. placing sensors [cite], as well as close-range visual data collection
 
-it agriculutre mostly terrestrial robots for weeding and weed detection, some commercial aerial applications for spraying and of course remote sensing. Sensor placinig in agriculuture not well explored, could also be used in other fields, such as the distribution of phereomne traps for invasive species (Japan beetle, wineyard bug). 
+% Figure: forest access methods (ie climber, crane, etc) and currently inaccessible locations?
+
+
+While direct data collection provides increased information richness,it is also more challenging to collect, especially at scale. 
+This invites the use of robots, in particular aerial robots or UAVs, which can easily access remote and challenging environments. Coupled with automation, direct data collection can thus be scaled, also from previously inaccessible locations.
+Indeed, robots have been and are being used extensively for indirect data collection in challenging environments, for example, UAVs for mapping, lidar and multispectral data capture over forests. They now represent mature, cost-effective platforms that are easy to use out-of-the-box, thanks to advanced algorithms and sensing capabilities which abstract away low level control for the users, providing stabilization, obstacle avoidance, waypoint navigation, and in some cases even target tracking and trajectory generation. This results in tools with which almost anyone can collect data with minimal training or introductory overhead. 
+
+Robotic direct data collections methods are seeing increased attention, but, unfortunately, are not yet at this level of readiness.
+
+For instance, direct data collection in forest environments is seeing increased use of UAVs.
+% Increasingly, UAVs are being used for direct data collection in forest environments. 
+Examples include collecting physical samples \cite{Krasylenko2023}, such as sampling small branches from the tops of trees \cite{Charron2020}, or collecting endangered plants from the edges of cliffs \cite{LaVigne2022}, placing sensors \cite{Hamaza2020, Farinha2020}, sampling eDNA from branches \cite{Aucone2023a}, as well as close-range visual data collection \cite{Liu2022, Zhou2022}.
+
+However, there still exist three main challenges when considering direct data collection with robots: accessibility, new data modalities, and user-friendliness.
+Certain environments and areas remain inaccessible and unexplored for direct data collection, robotic direct data collection for new data modalities such as plant volatiles or eDNA is limited, and lastly all developed solutions should be easily usable by the end-user so that developed solutions are actually adopted for use in the field.
+% certain areas remain inaccessible and unexplored, 
+% currently most data is of a single type and it is unexplored to collect complimentary data types that can provide complimentary or more relevant data,
+% direct robotic data collection of new data modalities complimentary to exsiting ones is unexplored.
+% robotic collection of novel data modalities such as eDNA or plant volatiles is unexplored,
+% and lastly how to make all of this user friendly so that these solutions can also be adopted in the field. 
+%new locations
+Unexplored regions for direct data collection include the thin branches of the outer canopy for collecting sensor data, for instance, despite this being the site of important photosynthetic activity, gas exchange, and water transpiration, and thus of particular interest. 
+Similarly, the inside of tree canopies is exceptionally challenging to access since it is the side of dense and cluttered foliage.  %, dense and cluttered [eprobe, snailbot]
+Lastly, sensor placement in agricultural fields in also largly unexplored, with most approaches focusing on indirect data collection from above, or applications, such as pesticide spraying with UAVs \cite{}.
+% agri field remain unexplored for placing and collecting sensors, most approaches focus and NDIV data collection, or sparing applications, not directly interacting with the environment by placing sensor.
+%%%%%%%%%%%%%%%%%%%%%maybe move this to the case for direct data?, 
+% data modalities
+% new data modalities
+There are several direct data types which can provide more informative data on the environment. For instance, by placing sensors within the zone of interest, microclimates (also vertical gradients) can be more easily measured, without requiring climbers, fixed infrastructure or other challenging and expensive methods of attachment. In agriculutural fields, remote sensing for precision agriculture still considers indicies such as NDVI or other optical based methods a way of monitoring plant health and there is hope that by expanding to different wavelengths of the electromagnetic spectrum, damage to the leaves can still be detected eralier, at least before discernible by the naked eye. This is limited by two fundamental limitationts, for pest infestations to be detected, there has to be optically detectable damage to the plant leaves, and data collection is always taken a distance away from the plant, meaning that a pixel of the data capture usually averages across several leaves, several plants, or several meters of crops, depending on the distance away of the data capture. This means that even more damage must be present before it will be detecetd in the averaged data. 
+- compared to volatiels, which are released immediately.
+- biodiveristy assessments, edna well suited since non-invasive, aggregating, and can capture fuller picture of biodiversity vs convential (biased methods) ie bioacoustics, camear traps
+
+%instead, here rjust say:
+as mentioned in section.....
+For forests, direct data methods such as direct sensor measurments from the region of interest (different strata of the tree) can provide rich informaiton, for agriculture, volatiles can present an early detection method which can detect damage as soon as it is inflicited vs other methods, and lastly for biodiversity, edna presents a noninvasive aggregated method which can capture a fuller picture of the biodiveristy in an area than exsiting conventional methods.
+
+Since direct data capture methods are inherently more risky and challenging to conduct than indirect data capture due to the proximitiy of the enviromnent and the interaction with objects in the environment, it is vital that automation and user-friendliness are at the forefront, already during the mechainsm and payload design to ensure that the end-users will be able and willing to adopt the solutions in the field.
+
+
+
+ 
+% however, only for specific areas, not reach all all areas (e.g. outer canopy with thin branches challenging
+%preching drone
+%% what is this different from the problem that you are solving???
+% more?
+eDNA mostly water sampling, % eDNA intro : collect one sample, aggregated species (water), or manually aggregate through touching many surafecs 
+% challenge:difficult to collect
+
+
+it agriculutre mostly terrestrial robots for weeding and weed detection, some commercial aerial applications for spraying and of course remote sensing. Sensor placinig in agriculuture not well explored, could also be used in other fields, such as the distribution of phereomne traps for invasive species (Japan beetle, wineyard bug). % volatile collection under explored in field conditions, especially for UAV deployment and collection of sensors
 
 In general, robots present possibility to access new locations, capture data at specific and more frequent times, as well as partially or fully automate to save time and expand access.
+% however points xyz have not yet been addressed, which is what I add
 
 % % teleoperation vs automation ( ideally automate everything, however unlikely, so should make available to users
 % % end-user not necessarly professional drone pilot, but other scientists, so should make accessible. 
@@ -187,6 +291,8 @@ In general, robots present possibility to access new locations, capture data at 
 
 %  goal/contributions
 \subsection{Automation and Teleoperation}
+%NOW end user is not necessarily robot expert, so should use easy integrated hardware, and simlpe-to-use software (for tele), but also atuomate as mucha s possible since this makes it also easier to use
+%*% in order to make solution user-friendly and allow end-users to easily use the solutions, should either automate or incorporate user-friendly design
 % provide previous points, but accessible to larger user base. IE collect new data modalities, enable access to new locations, scalability, but also accessible to larger user base through automation aund enhanced (user-friendly) design and teleoperation
 %also brief SOTA that full automation is unrealistic in natural environments in the near future, and enabling new and scaalble applications with current technologies has larger impact.
 Robots, in particular aerial robots or UAVs, can provide access to previously challenging areas, as well as scalability through data capture at specific and more frequent times with partial or full automation to save time and expand access. It should be noted, that in any case, humans will still interact with the system. Either for conducting the operation, sample collection, or data analysis afterwards. In order to unsure implementation of these technologies, they should be usable for a wide subset of people.
@@ -197,43 +303,66 @@ This level of usability should also be attained for direct data collection metho
 
 in practice, most full automation unlikely, better to have user-friendly system with low level control and unimportant things automated, leaving the user to make high level decisions, such as where to sample or what data to collect, with most of the actual collection then automated.
 
+\subsection{Research Objectives}
 
-- Goal: Democratizing scalable data collection methods for environmental monitoring, biodiversity assessment, and agriculture for all locations and all users. (more locations and more users
+%double-cehck what is research objective
+The research objective of this dissertation is to democratize scalable direct data collection methods for environmental monitoring, biodiversity assessment, and agriculture in new locations and for more users. This involves enabling novel use-cases for UAVs to collect direct data from previously unexplored areas, such as the outer or inner tree canopies, or agricultural fields, enabling collection of novel types of direct data which can provide more information value, such as eDNA or volatiles, and taking steps through automation and user-friendly design to ensure that end-users can utilize the developed tools. 
+
+This can be summarized 
+
 % 1. ie enable new types of data collection, requiring direct interaction with the environment or objects in the environment
 % 2. enable more people to use collect this data through automation and user-friendliness
 % - enable new novel locations through the use of UAVs. 
 
 % [maybe this comes after the research questions, as the answer why they are needed]
-- Contributions:
-1. Collect novel (relevant, vs remote sensing) types of data of environmental factors (eDNA, volatiles) [new data modalities]
-2. Initial steps to provide easy-to-use solutions for end-users through automation and user-centric design  (user-friendliness, new data modalities)
-3. Enable novel use cases for UAVs, placing and collecting sensors from tree canopies, or placing and collecting sensors from agricultural fields (new locations, new data modalities)
-4. Provides access to previously inaccessible locations, and the use of automatable drones permits scaling to larger scales (scalable, new locations)
+% - Contributions:
+% 1. Collect novel (relevant, vs remote sensing) types of data of environmental factors (eDNA, volatiles) [new data modalities]
+% 2. Initial steps to provide easy-to-use solutions for end-users through automation and user-centric design  (user-friendliness, new data modalities)
+% 3. Enable novel use cases for UAVs, placing and collecting sensors from tree canopies, or placing and collecting sensors from agricultural fields (new locations, new data modalities)
+% 4. Provides access to previously inaccessible locations, and the use of automatable drones permits scaling to larger scales (scalable, new locations)
 
-\section{Dissertation Outline}
+
 % uniquely challenging to enable new direct data colleciton methedosd, adderssing issues ,therefore ask:
 %Democratizing scalable data collection methods for environmental monitoring, biodiversity assessment, and agriculture for all locations and all users. (more locations and more users
 %
 In this dissertation we look at the following four research questions within the context of pest detection in agriculture, and biodiversity and environmental monitoring within forests.
 
+%FIGURE?
+% a nice way of presenting the different works of thesis WRT to access/what they enable?
+% biodiv assessment, env. monitoring, agriculture (columns/different envi. ie animals in forest, then just forest, then agri field
+% x axis is scalabilty/ automation + user-friendliness?
+
 %bit more introduction on the research questiotns, maybe one central one?
 % Thesis outline /research questions
-Q1. What type of data is necessary to collect for holistic view of environment/biodiv/pest (direct data collection)
-Q2. How to democratise direct data collection
-Q3: how to enable direct data collection from previously inaccessible (diffict to access) locations?
-Q4: How to scale?
+% Q1. What type of data is necessary to collect for holistic view of environment/biodiv/pest (direct data collection)
+% Q2. How to democratize direct data collection
+% Q3: how to enable direct data collection from previously inaccessible (difficult to access) locations?
+% Q4: How to scale?
 % => (summarized)
-Q1: What data is needed for direct data collection? [eDNA, volatiles, direct sensor data]
+% Q1: What data is needed for direct data collection? [eDNA, volatiles, direct sensor data]
+Q1: What direct data is needed for environmental monitoring and biodiversity assessments in forests and pest detection in agriculture? [ eDNA, direct sensor data/spectral(?), volatiles]
 % what direct data types provide the most informative data for an environment and task, and how to collect it?
 	%alternative: How to collect direct data for different fields (agriculture, biodiv/env.)
-Q2: How to democratize direct data collection? [automation, user-friendliness]
-Q3: How to scale direct data collection? [use UAV to access new locations + automate ]
 Q4: How to collect direct data from challenging locations? [UAVs for new locations]
+Q3: How to scale direct data collection? [use UAV to access new locations + automate ]
+Q2: How to democratize direct data collection? [automation, user-friendliness]
 
-Tabel XX shows the contributions to these research questions for each of the papers included in this dissertation. 
+
+\section{Dissertation Outline}
+
+Tabel XX summarizes the paper included in this thesis and shows their the contributions to the research questions. 
+
+The following section contains a brief summary of every work and its relevance to the research questions. Next, Each the full works for each section are listed.
+
+The rest dissertation is structured as follows: first, there is an overview of works and other relevant activies. Next, the there are three main sections containing each the main application area, pest detection in agriculture, environmental monitoring in forests, and biodiversity monitoring in forests. 
+
+Finally, in the discussion we summarize the contributions of our works and how they address the research questions, as well as limitations and open research areas. 
+
+
 
 \subsection{Pest Detection in Agricultural Fields}
 % In these works we look at using new modality of volatiels for early detection of plant stress, try to make more user-friendly teleoperation.
+% After both papers, have short section describing next steps (ie also have multiple pumps autonomous deplomyent and collection 
 % multiple pumps?/automation?
 % Part A - looking at XXX
 % Paper x,y,z which did whatever...
@@ -246,7 +375,7 @@ Tabel XX shows the contributions to these research questions for each of the pap
 % Global agriculture is challenged to provide food for a human population that is larger than ever before and still increasing. This is accompanied by the need to reduce the large global impacts of agriculture while increasing yields. Early identification of plant stress enables fast intervention to limit crop losses and optimized application of pesticides and fertilizer to reduce environmental impacts. Current image-based approaches identify plant stress responses hours or days after the stress event, usually only after substantial damage has occurred and visual cues become apparent. In contrast, plant volatiles are released seconds to hours after stress events and can quickly indicate both the type and severity of stress. An automatable and nondisruptive sampling method is needed to enable the use of plant volatiles for monitoring plant stress in precision agriculture. In this work, we detail the development of a plant volatile sampler that can be deployed and collected with an uncrewed aerial vehicle (UAV). The effect of sam- pling flow rate, horizontal distance to volatile source, and overhead downwash on collected volatiles is investigated, along with the deployment accuracy and retrieval successes with manual flight. Finally, volatile sampling is validated in outdoor tests. The possibility of robotic collection of plant volatiles is a first and important step toward the use of chemical signals for early stress detection and opens up new avenues for precision agriculture beyond visual remote sensing.
 
 In this work we investigate the process of robotic volatile collection for early pest detection in agriculture. In contrast to remote sensing, which requires visual symptoms and thus damage on the plant to detect pests, volatiles are released seconds to hours after the herbivore event. Volatiles can thus quickly indicate both the type and severity of stress. An automatable and nondisruptive sampling method is needed to enable the use of plant volatiles for monitoring plant stress in precision agriculture. Therefore, we develop a plant volatile sampler that can be deployed and collected with an uncrewed aerial vehicle (UAV). The effect of sampling flow rate, horizontal distance to volatile source, and overhead downwash on collected volatiles is investigated, along with the deployment accuracy and retrieval successes with manual flight. Finally, volatile sampling is validated in outdoor tests. The possibility of robotic collection of plant volatiles is a first and important step toward the use of chemical signals for early stress detection and opens up new avenues for precision agriculture beyond visual remote sensing.
-The collection of direct data from agricultural fields, in this case volatiles, allows more informative data collection than from indirect methods, such as remote sensing. In this case, the increased information is temporal, with the derict data permitting earlier detection of pests. However, as with most direct data collection methods, data collection is also more work, requiring the placing and collecting of samplers from the field, which is more challenging than simply flying above it. This work therefore addresses RQ1, enabling the direct data collection of a new data modality, namely volatiles; this work also addresses RQ4, enabling the placing and collecting of sensors in agricultural fields, which was also not investigated previously. 
+The collection of direct data from agricultural fields, in this case volatiles, allows more informative data collection than from indirect methods, such as remote sensing. In this case, the increased information is temporal, with the direct data permitting earlier detection of pests. However, as with most direct data collection methods, data collection is also more work, requiring the placing and collecting of samplers from the field, which is more challenging than simply flying above it. This work therefore addresses RQ1, enabling the direct data collection of a new data modality, namely volatiles; this work also addresses RQ4, enabling the placing and collecting of sensors in agricultural fields, which was also not investigated previously. 
 %new modality/new locations
 
 
@@ -254,12 +383,13 @@ The collection of direct data from agricultural fields, in this case volatiles, 
 %Abstract
 %—Increased flight time and advanced sensors are making Micro Aerial Vehicles (MAVs) easier to use, facilitating their widespread adoption in fields such as precision agriculture or environmental monitoring. However, current applications are limited mainly to passive visual observation from far above; to enable the next generation of aerial robot applications, MAVs must begin to directly physically interact with objects in the environment, such as placing and collecting sensors. Enabling these applications for a wide spectrum of end-users is only possible if the mechanism is safe and easy to use, without overburdening the user with complex integration, complicated control, or overwhelming and convoluted feedback. To this end we propose a self-sufficient passive payload system to enable both the deployment and retrieval of sensors for agri- culture. This mechanism can be simply mechanically attached to a commercial, off-the-shelf MAV, without requiring further electrical or software integration. The user-centric design and mechanical intelligence of the system facilitates ease of use through simplified control with targeted perceptual feedback. The usability of the system is validated quantitatively and qualitatively in a user study demonstrating sensor deployment and collection. All participants were able to deploy and collect at least four sensors both within 10 minutes in visual line-of- sight and within 12 minutes in beyond visual line-of-sight, after only three minutes of practice. Enabling MAVs to physically interact with their environment will usher in the next stage of MAV utility and applications. Complex tasks, such as sensor deployment and retrieval, can be realized relatively simply, by relying on a mechanically passive system designed with the user in mind, these payloads can enable such applications to be more widely available and inclusive to end-users.
 
-Building on the previous work we address RQ2 and RQ3, enabling more user-friendly collection and retrieval of the sampling mechanism, which also leads to more scalable data collection and lays the initial framework for automation. Many of the user-cues and mechanical intelligence that make the mechanism easier for the user to use, also make it easier to automate. Taking inspiration from commercially available mapping UAVs, which require no specialized training to use, since most of the challenging and monotonous tasks are automated, we also seek to enable new aerial robot applications, such as sensor placement and collection by considering the end-user already during mechansim development. Enabling these applications for a wide spectrum of end-users is only possible if the mechanism is safe and easy to use, without overburdening the user with complex integration, complicated control, or overwhelming and convoluted feedback. To this end we propose a self-sufficient passive payload system to enable both the deployment and retrieval of sensors for agri- culture. This mechanism can be simply mechanically attached to a commercial, off-the-shelf MAV, without requiring further electrical or software integration. The user-centric design and mechanical intelligence of the system facilitates ease of use through simplified control with targeted perceptual feedback. The usability of the system is validated quantitatively and qualitatively in a user study demonstrating sensor deployment and collection. All participants were able to deploy and collect at least four sensors both within 10 minutes in visual line-of- sight and within 12 minutes in beyond visual line-of-sight, after only three minutes of practice. Enabling MAVs to physically interact with their environment will usher in the next stage of MAV utility and applications. Complex tasks, such as sensor deployment and retrieval, can be realized relatively simply, by relying on a mechanically passive system designed with the user in mind, these payloads can enable such applications to be more widely available and inclusive to end-users.
+Building on the previous work we address RQ2 and RQ3, enabling more user-friendly collection and retrieval of the sampling mechanism, which also leads to more scalable data collection and lays the initial framework for automation. Many of the user-cues and mechanical intelligence that make the mechanism easier for the user to use, also make it easier to automate. Taking inspiration from commercially available mapping UAVs, which require no specialized training to use, since most of the challenging and monotonous tasks are automated, we also seek to enable new aerial robot applications, such as sensor placement and collection by considering the end-user already during mechanism development. Enabling these applications for a wide spectrum of end-users is only possible if the mechanism is safe and easy to use, without overburdening the user with complex integration, complicated control, or overwhelming and convoluted feedback. To this end we propose a self-sufficient passive payload system to enable both the deployment and retrieval of sensors for agriculture. This mechanism can be simply mechanically attached to a commercial, off-the-shelf MAV, without requiring further electrical or software integration. The user-centric design and mechanical intelligence of the system facilitates ease of use through simplified control with targeted perceptual feedback. The usability of the system is validated quantitatively and qualitatively in a user study demonstrating sensor deployment and collection. All participants were able to deploy and collect at least four sensors both within 10 minutes in visual line-of- sight and within 12 minutes in beyond visual line-of-sight, after only three minutes of practice. Enabling MAVs to physically interact with their environment will usher in the next stage of MAV utility and applications. Complex tasks, such as sensor deployment and retrieval, can be realized relatively simply, by relying on a mechanically passive system designed with the user in mind, these payloads can enable such applications to be more widely available and inclusive to end-users.
 
 %scalability, automation, user friendliness
 
 
 \subsection{Environmental Monitoring in Forests}
+%not a full intro/sota, just basic info
 Forests represent a vital biosphere... home... (biodegrad one)
 however, challenging to access, in these chapters look to develop scalable, user-friedly, autoamatable solutions to collect direct data from previously inaccessible locations.
 
@@ -282,15 +412,21 @@ This work looks at RQ4, enabling direct data collection from the previously inac
 %Forest canopies are vital ecosystems, but remain understudied due to difficult access. Forests could be monitored with a network of biodegradable sensors that break down into environmentally friendly substances at the end of their life. As a first step in this direction, this paper details the development of a biodegradable origami gripper to attach conventional sensors to branches, deployable with an aerial robot. Through exposure to sufficient moisture the gripper loses contractile force, dropping the sensor to the ground for easier collection. The origami design of the gripper as well as biodegradable materials selection is detailed, allowing for further extensions utilizing biodegradable origami. Both the gripper and the gelatin hydrogel used as an actuating elastic element for generating the grasping force are experimentally characterized, with the gripper demonstrating a maximum holding force of 1 N. Additionally, the degradation of the grip- per until failure in the presence of moisture is also investigated, where the gripper can absorb up to 10 ml of water before falling off a branch. Finally, deployment of the gripper on a tree branch with an aerial robot is demonstrated. Overall, the biodegradable origami gripper represents a first step towards a more scalable and environmentally sustainable approach for ecosystem monitoring.
 
 \subsubsection{WIP: SnailBot: Robotic Environmental Monitoring using Gelatin Hydrogels as a Biodegradable Adhesive}
+% not only sensor placement, but also longer-term env monitoring in both forest and idsutrial/infrastructure environment. Since sensor placement, perching, climbing, represent robotic monitoring solutions, always need to attach somehow, other solutions are quite specific to substrate, but chemical adhesion works well but leaves residue and not easily reversible. Inspried by hot-melt adhesive, showcase how to use gelatin hydrogel as reversible, bidoegradable adhesive for robobitc montiring in three different use cases, sensor placement, perching drones, and climbing robots. 
 
 \underline{Automation}
+%previously developed solutions are only useful if they are used, so look at ways to make the previous steps autonomous through detection of branches, and depth sensning 
+
 \subsubsection{Learning Occluded Branch Depth Maps in Forest Environments Using RGB-D Images \cite{Geckeler2024}}
 %abstract
-Covering over a third of all terrestrial land area, forests are crucial environments; as ecosystems, for farming, and for human leisure. However, they are challenging to access for environmental monitoring, for agricultural uses, and for search and rescue applications. To enter, aerial robots need to fly through dense vegetation, where foliage can be pushed aside, but occluded branches pose critical obstacles. Therefore, we propose pixel-wise depth regression of occluded branches using three different U-Net inspired architectures. Given RGB-D input of trees with partially occluded branches, the models estimate depth values of only the wooden parts of the tree. A large photorealistic simulation dataset comprising around 44Kimages ofnine different tree species is gen- erated, on which the models are trained. Extensive evaluation and analysis ofthemodels on this dataset is shown. To improve network generalization to real-world data, different data augmentation and transformation techniques are performed.Theapproaches are then also successfully demonstrated on real-world data of broadleaf trees from Swiss temperate forests and a tropical Masoala Rain- forest. This work showcases the previously unexplored task of frame-by-frame pixel-based occluded branch depth reconstruction to facilitate robot traversal of forest environments.
+Covering over a third of all terrestrial land area, forests are crucial environments; as ecosystems, for farming, and for human leisure. However, they are challenging to access for environmental monitoring, for agricultural uses, and for search and rescue applications. To enter, aerial robots need to fly through dense vegetation, where foliage can be pushed aside, but occluded branches pose critical obstacles. Therefore, we propose pixel-wise depth regression of occluded branches using three different U-Net inspired architectures. Given RGB-D input of trees with partially occluded branches, the models estimate depth values of only the wooden parts of the tree. A large photorealistic simulation dataset comprising around 44Kimages of nine different tree species is generated, on which the models are trained. Extensive evaluation and analysis ofthemodels on this dataset is shown. To improve network generalization to real-world data, different data augmentation and transformation techniques are performed.Theapproaches are then also successfully demonstrated on real-world data of broadleaf trees from Swiss temperate forests and a tropical Masoala Rain- forest. This work showcases the previously unexplored task of frame-by-frame pixel-based occluded branch depth reconstruction to facilitate robot traversal of forest environments.
 
 \subsubsection{WIP: Event Spectroscopy: Event-based Multispectral and Depth Sensing using Structured Light}
+%intro, don't have to mention everything (put this in intro to ED)
+% A challenge for multispectral and hyperspectral data analysis methods is resolution. While spectral analysis of individual leaves in a lab setting may detect infections and pathogens relatively early, applying these same methods to data collected from dozens of meters above the canopy requires symptoms to be much more visible, with substantial damage incurred before successful detection. Close-range multispectral detections could provide a direct data method for such data, but are challenging to capture on a camera and systems level.
 
 \subsection{Biodiversity Assessments in Forests}
+% besides previously seen enevironmental data, biodiversity assessment is also essenital. In this section we show to use use edna to scalcably assess biodiversity from challenging to access rainforests
 
 \subsubsection{eProbe: Sampling of Environmental DNA within Tree Canopies with Drones \cite{Kirchgeorg2024}}
 %abstract
@@ -404,7 +540,7 @@ Covering over a third of all terrestrial land area, forests are crucial environm
 % Table according to #3,CS (but with VOL/UR first), and with rows switched
 \begin{table}
     \centering 
-    \begin{tabular}{r|ccccccccc}
+    \begin{tabular}{r|cc|ccccc|cc}
             % VOL & UR & OG  & BOG & SB & OBR & ED & EP2 & XP
         & \multicolumn{2}{c}{Pest Det.} & \multicolumn{5}{c}{Env. Mon.} & \multicolumn{2}{c}{Biodiv. Assess.}  \\
          % & Pest Det. & Pest Det. & Env. Mon. & Env. Mon. & Env. Mon. & Env. Mon. & Env. Mon. & Biodiv. Assess. & Biodiv. Assess. \\%TODO: make multicolumn for each of the papers
