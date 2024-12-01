@@ -31,18 +31,18 @@
    \addlegendimage{only marks, mark=square*,mark size=4pt,mark options={color=m-red}}
 \addlegendentry{3 Min. Cooling}
   \foreach \n in {0,...,3} {
-			\addplot+[ boxplot,style=m-blue, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {figures/fig-2-plot-placeholder/heating_temperature.csv}
+			\addplot+[ boxplot,style=m-blue, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {chapters/papers/SB/figures/fig-2-plot-placeholder/heating_temperature.csv}
       node[left, color=black, fill opacity=1] at (boxplot box cs: \boxplotvalue{median},0)
 {\pgfmathprintnumber{\fpeval{round(\boxplotvalue{median},0)}}};
             % \pgfplotsset{cycle list shift=-\n+1} % Goes one style back (offset, not index)
-         \addplot+[only marks, mark=*,style=m-blue] table[x expr=\n+1.35, y index=\n, col sep=comma] {figures/fig-2-plot-placeholder/heating_temperature.csv};
+         \addplot+[only marks, mark=*,style=m-blue] table[x expr=\n+1.35, y index=\n, col sep=comma] {chapters/papers/SB/figures/fig-2-plot-placeholder/heating_temperature.csv};
 		};
   \foreach \n in {4,...,5} {
-  			\addplot+[ boxplot={draw position = \n-1}, style=m-red, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {figures/fig-2-plot-placeholder/heating_temperature.csv}
+  			\addplot+[ boxplot={draw position = \n-1}, style=m-red, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {chapters/papers/SB/figures/fig-2-plot-placeholder/heating_temperature.csv}
         node[left, color=black, fill opacity=1] at (boxplot box cs: \boxplotvalue{median},0)
 {\pgfmathprintnumber{\fpeval{round(\boxplotvalue{median},0)}}};
                  \pgfplotsset{cycle list shift=-\n} % Goes one style back (offset, not index)
-         \addplot+[only marks, mark=*,style=m-red] table[x expr=(\n-1)+0.35, y index=\n, col sep=comma] {figures/fig-2-plot-placeholder/heating_temperature.csv};
+         \addplot+[only marks, mark=*,style=m-red] table[x expr=(\n-1)+0.35, y index=\n, col sep=comma] {chapters/papers/SB/figures/fig-2-plot-placeholder/heating_temperature.csv};
 			% \addplot+[ boxplot={draw position = 4}, style=m-red, mark=*, fill, draw=black] table[y index=5, col sep=comma] {figures/fig-2-plot-placeholder/heating_temperature.csv};
    %             \pgfplotsset{cycle list shift=-5} % Goes one style back (offset, not index)
    %       \addplot+[only marks, mark=*,style=m-red] table[x expr=4.35, y index=5, col sep=comma] {figures/fig-2-plot-placeholder/heating_temperature.csv};

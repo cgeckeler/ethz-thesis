@@ -23,11 +23,11 @@
     every axis plot/.append style={thick, fill, fill opacity =0.5},
     xlabel={$F_P$, Pressing Force (N) (n=5)},ylabel={Ratio Pull-Off/Pressing Force}]
   \foreach \n in {0,...,4} {
-			\addplot+[ boxplot, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {figures/fig-2-plot-placeholder/pressing_force_ratio.csv}
+			\addplot+[ boxplot, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {chapters/papers/SB/figures/fig-2-plot-placeholder/pressing_force_ratio.csv}
       node[left, color=black, fill opacity=1] at (boxplot box cs: \boxplotvalue{median},0)
 {\pgfmathprintnumber{\fpeval{round(\boxplotvalue{median},0)}}};
                   \pgfplotsset{cycle list shift=-1*(\n+1)} % Goes one style back (offset, not index)
-         \addplot+[only marks, mark=*] table[x expr=\n+1.35, y index=\n, col sep=comma] {figures/fig-2-plot-placeholder/pressing_force_ratio.csv};
+         \addplot+[only marks, mark=*] table[x expr=\n+1.35, y index=\n, col sep=comma] {chapters/papers/SB/figures/fig-2-plot-placeholder/pressing_force_ratio.csv};
 		};
   \end{axis}
   \node at (current axis.north) [anchor=south] {$t_c=2 Min., T_H=60\degree, m=0.1g$};

@@ -24,11 +24,11 @@
     every axis plot/.append style={thick, fill, fill opacity =0.5},
     xlabel={$t_c$, Cooling Time (min.) (n=5)},ylabel={$F_M$, Pull-Off Force (N)}]
   \foreach \n in {0,...,3} {
-			\addplot+[ boxplot, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {figures/fig-2-plot-placeholder/cooling_time_fan.csv}
+			\addplot+[ boxplot, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {chapters/papers/SB/figures/fig-2-plot-placeholder/cooling_time_fan.csv}
       node[left, color=black, fill opacity=1] at (boxplot box cs: \boxplotvalue{median},0)
 {\pgfmathprintnumber{\fpeval{round(\boxplotvalue{median},0)}}};
                \pgfplotsset{cycle list shift=-1*(\n+1)} % Goes one style back (offset, not index)
-         \addplot+[only marks, mark=*] table[x expr=\n+1.35, y index=\n, col sep=comma] {figures/fig-2-plot-placeholder/cooling_time_fan.csv};
+         \addplot+[only marks, mark=*] table[x expr=\n+1.35, y index=\n, col sep=comma] {chapters/papers/SB/figures/fig-2-plot-placeholder/cooling_time_fan.csv};
 		};
   \end{axis}
       \node at (current axis.north) [anchor=south] {$T_H=60\degree, F_P=4.9N, m=0.1g$};

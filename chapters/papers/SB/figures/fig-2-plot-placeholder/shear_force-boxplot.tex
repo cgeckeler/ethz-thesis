@@ -24,16 +24,16 @@
     every axis plot/.append style={thick, fill, fill opacity =0.5},
     xlabel={Normal vs Shear (n=5)},ylabel={$F_M$, Pull-Off Force (N)}]
   % \foreach \n in {0,...,1} {
-			\addplot+[ boxplot, mark=*, fill, draw=black] table[y index=0, col sep=comma] {figures/fig-2-plot-placeholder/shear_force.csv}
+			\addplot+[ boxplot, mark=*, fill, draw=black] table[y index=0, col sep=comma] {chapters/papers/SB/figures/fig-2-plot-placeholder/shear_force.csv}
       node[left, color=black, fill opacity=1] at (boxplot box cs: \boxplotvalue{median},0)
 {\pgfmathprintnumber{\fpeval{round(\boxplotvalue{median},0)}}};
         \pgfplotsset{cycle list shift=-1} 
-         \addplot+[only marks, mark=*, ] table[x expr=1.35, y index=0, col sep=comma] {figures/fig-2-plot-placeholder/shear_force.csv};
-         \addplot+[ boxplot, mark=*, fill, style=m-red,draw=black] table[y index=1, col sep=comma] {figures/fig-2-plot-placeholder/shear_force.csv}
+         \addplot+[only marks, mark=*, ] table[x expr=1.35, y index=0, col sep=comma] {chapters/papers/SB/figures/fig-2-plot-placeholder/shear_force.csv};
+         \addplot+[ boxplot, mark=*, fill, style=m-red,draw=black] table[y index=1, col sep=comma] {chapters/papers/SB/figures/fig-2-plot-placeholder/shear_force.csv}
             node[left, color=black, fill opacity=1] at (boxplot box cs: \boxplotvalue{median},0)
 {\pgfmathprintnumber{\fpeval{round(\boxplotvalue{median},0)}}};
          \pgfplotsset{cycle list shift=-2} % Goes one style back (offset, not index)
-         \addplot+[only marks, mark=*, style=m-red] table[x expr=2.35, y index=1, col sep=comma] {figures/fig-2-plot-placeholder/shear_force.csv};
+         \addplot+[only marks, mark=*, style=m-red] table[x expr=2.35, y index=1, col sep=comma] {chapters/papers/SB/figures/fig-2-plot-placeholder/shear_force.csv};
 		% };
   \end{axis}
   \node at (current axis.north) [anchor=south] {$t_c=2 Min., T_H=60\degree, F_P=4.9N, m=0.1g$};

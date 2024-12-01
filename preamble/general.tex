@@ -43,6 +43,14 @@
 \usepackage{mparhack}
 \usepackage{relsize}
 
+% Graphics
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{shapes.geometric}
+
 %%-------CG Custom------
 \usepackage{gensymb}    % for \degree (origami gripper, Advanced Intelligent System Layout)
  \renewenvironment{author} {
@@ -83,6 +91,31 @@
 
 % --- Snailbot things (Wiley Advanced Intelligent Systems)
 \usepackage{wrapfig}
+
+% \usepackage{cite}
+
+% \usepackage{pgfplots} % box plots
+% \pgfplotsset{compat=1.8}
+\usepgfplotslibrary{statistics}
+\usepackage{xfp} % to round for pgfplot labels  \fpeval{round(0.999999,2)=0.99}
+% \usepgfplotslibrary{external}
+% \tikzexternalize
+% \pgfplotsset{compat = 1.15, cycle list/Set1-8} 
+% Tikz is loaded automatically by pgfplots
+% \usetikzlibrary{pgfplots.statistics, pgfplots.colorbrewer} 
+% provides \pgfplotstabletranspose
+\usepackage{pgfplotstable}
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows.meta}
+% \usepackage{filecontents}
+% TIKZ PGFPlot settings
+\definecolor{m-blue}    {HTML}{4477AA}
+\definecolor{m-cyan}    {HTML}{66CCEE}
+\definecolor{m-green}   {HTML}{228833}
+\definecolor{m-yellow}  {HTML}{CCBB44}
+\definecolor{m-red}     {HTML}{EE6677}
+\definecolor{m-purple}  {HTML}{AA3377}
+\definecolor{m-grey}    {HTML}{BBBBBB}
 
 %---------------END CG Custom----------------
 
@@ -142,13 +175,13 @@
   pdflang={en},%
 }
 
-% Graphics
-\usepackage{graphicx}
-\usepackage{rotating}
-\usepackage{tikz}
-\usepackage{pgfplots}
-\pgfplotsset{compat=newest}
-\usetikzlibrary{shapes.geometric}
+% % Graphics
+% \usepackage{graphicx}
+% \usepackage{rotating}
+% \usepackage{tikz}
+% \usepackage{pgfplots}
+% \pgfplotsset{compat=newest}
+% \usetikzlibrary{shapes.geometric}
 
 % Circled numbers
 \newcommand*\circled[1]{
