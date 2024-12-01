@@ -203,7 +203,7 @@ Protein-based glues, such as gelatin, have been used as adhesives since antiquit
 
 %should be in Section Working Principle, but pagebreak
 \begin{wrapfigure}{r}{0.5\linewidth}
-  \includegraphics[width=\linewidth]{figures/fig-schematic/fig-schematic.pdf}
+  \includegraphics[width=\linewidth]{chapters/papers/SB/figures/fig-schematic/fig-schematic.pdf}
   \caption{Working principle behind gelatin-based hydrogels as adhesives. To attach an object to the substrate, an amount of  hydrogel, $m$, is heated to temperature $T_H$, then pressed against the substrate with force $F_P$. After cooling for time $t_C$, the hydrogel is ready for load-bearing, up to the maximum pull-off force, $F_M$. To remove the object, the hydrogel is again heated, and any remaining residue can be washed away by water.}
   \label{fig:fig-schematic}
 \end{wrapfigure}
@@ -246,30 +246,30 @@ Differing applications of the adhesive will require different levels of adhesion
     \def\myanchorshift{-0.6cm}
 \node [image] (frame1)
 {\begin{center}
-\includegraphics[width=0.7\textwidth]{figures/fig-2-plot-placeholder/fig-2-plot-placeholder-testsetup.pdf}
+\includegraphics[width=0.7\textwidth]{chapters/papers/SB/figures/fig-2-plot-placeholder/fig-2-plot-placeholder-testsetup.pdf}
 \end{center}};
 % \node [left=of frame1]{A};
 \node[anchor=south west, above left=\myanchorshift] at (frame1.north west) {\large A};
 \node [image,right=of frame1] (frame2) 
-{\input{figures/fig-2-plot-placeholder/cooling_temperature_curve-plot}};
+{\input{chapters/papers/SB/figures/fig-2-plot-placeholder/cooling_temperature_curve-plot}};
 \node[anchor=south west, above left=\myanchorshift] at (frame2.north west) {\large B};
 \node [image,below=of frame1] (frame3)
-    {\input{figures/fig-2-plot-placeholder/cooling_time_fan-boxplot}};
+    {\input{chapters/papers/SB/figures/fig-2-plot-placeholder/cooling_time_fan-boxplot}};
 \node[anchor=south west, above left=\myanchorshift] at (frame3.north west) {\large C};
 \node [image,right=of frame3] (frame4) 
-{\input{figures/fig-2-plot-placeholder/heating_temperature-boxplot}};
+{\input{chapters/papers/SB/figures/fig-2-plot-placeholder/heating_temperature-boxplot}};
 \node[anchor=south west, above left=\myanchorshift] at (frame4.north west) {\large D};
 \node [image,below=of frame3] (frame5) 
-{\input{figures/fig-2-plot-placeholder/pressing_force-boxplot}};
+{\input{chapters/papers/SB/figures/fig-2-plot-placeholder/pressing_force-boxplot}};
 \node[anchor=south west, above left=\myanchorshift] at (frame5.north west) {\large E};
 \node [image,right=of frame5] (frame6) 
-{\input{figures/fig-2-plot-placeholder/pressing_force_ratio-boxplot}};
+{\input{chapters/papers/SB/figures/fig-2-plot-placeholder/pressing_force_ratio-boxplot}};
 \node[anchor=south west, above left=\myanchorshift] at (frame6.north west) {\large F};
 \node [image,below=of frame5] (frame7) 
-{\input{figures/fig-2-plot-placeholder/biogel_sample_size-boxplot}};
+{\input{chapters/papers/SB/figures/fig-2-plot-placeholder/biogel_sample_size-boxplot}};
 \node[anchor=south west, above left=\myanchorshift] at (frame7.north west) {\large G};
 \node [image,right=of frame7] (frame8) 
-{\input{figures/fig-2-plot-placeholder/shear_force-boxplot}};
+{\input{chapters/papers/SB/figures/fig-2-plot-placeholder/shear_force-boxplot}};
 \node[anchor=south west, above left=\myanchorshift] at (frame8.north west) {\large H};
 \end{tikzpicture}
 }
@@ -314,7 +314,7 @@ All previous tests were as a function of the pull-off force in the normal direct
 \subsubsection{Surface Tests} % pull-off force vs different materials
 \label{subsec:surface_tests}
 \begin{wrapfigure}{r}{0.5\linewidth}
-  \includegraphics[width=\linewidth]{figures/fig-3-surfaces-placeholder/fig-3-surfaces.pdf}
+  \includegraphics[width=\linewidth]{chapters/papers/SB/figures/fig-3-surfaces-placeholder/fig-3-surfaces.pdf}
   \caption{Different materials used in the maximum pull-off force tests (I), with close-ups showcasing the surface roughness (II). A) Bark, B) Concrete brick, C) MDF, D) Glass}
   \label{fig:fig3-placeholder}
 \end{wrapfigure}
@@ -331,11 +331,11 @@ To ensure adhesion across a variety of substrates for monitoring applications in
     ]
     \def\myanchorshift{-0.6cm}
 \node [image] (frame1)
-{\input{figures/fig-3-surfaces-placeholder/surface_roughness-boxplot}};
+{\input{chapters/papers/SB/figures/fig-3-surfaces-placeholder/surface_roughness-boxplot}};
 % \node [above left=of frame1] {A}; %  at (-4,2)
 \node[anchor=south west, above left=\myanchorshift] at (frame1.north west) {\large A};
 \node [image,right=of frame1] (frame2) 
-{\input{figures/fig-3-surfaces-placeholder/surface_materials-boxplot}};
+{\input{chapters/papers/SB/figures/fig-3-surfaces-placeholder/surface_materials-boxplot}};
 % \node [above left=of frame2] {B}; %  at (-4,2)
 \node[anchor=south west, above left=\myanchorshift] at (frame2.north west) {\large B};
 \end{tikzpicture}
@@ -373,7 +373,7 @@ However, few works have looked at the method of attachment, usually simplifying 
 
 % Figure left CAD/pic render of mechanism (drone shaded out), right stills from video of procedure, approach, pushing, detatchment
 \begin{figure}
-  \includegraphics[width=\linewidth]{figures/fig-4-sensor-placement-placeholder/fig-4-sensor-placement-placeholder.pdf}
+  \includegraphics[width=\linewidth]{chapters/papers/SB/figures/fig-4-sensor-placement-placeholder/fig-4-sensor-placement-placeholder.pdf}
   \caption{Sensor Placement with a UAV. A) showcases the different components of the sensor placing payload on the UAV, the sensor box has a heating plate with the hydrogel adhesive, which has a magnetic mechanical and electrical connection to the UAV for heating the plate. A swivel joint de-couples the UAV pitch from the sensor box orientation and facilitates better alignment. B) showcases the attachment process, the UAV heats the hydrogel, attaches the sensor and pitches forward, maintaining force and contact until the adhesive is sufficiently cooled, and pitches back which shears the magnetic connection and detaches the sensor.}
   \label{fig:fig4-placeholder}
 \end{figure}
@@ -407,7 +407,7 @@ To enable reversible adhesion without problematic residue across a variety of su
 %Proposed Mechanism 
 %Figure with stills from video (ie approaching, pushing, perched, spinning, take-off next to CAD/pic render of mechanism
 \begin{figure}
-  \includegraphics[width=\linewidth]{figures/fig-5-perching-placeholder/fig-5-perching-placeholder.pdf}
+  \includegraphics[width=\linewidth]{chapters/papers/SB/figures/fig-5-perching-placeholder/fig-5-perching-placeholder.pdf}
   \caption{UAV Perching: A) CAD Render of perching mechanism with components. B) Perching Sequence: the UAV approaches the target after heating the hydrogel for 30 seconds(Approach), pushes against it and cools the hydrogel (Cooling) for 3 minutes, at which point the UAV (1.1 kg) is perched and the motors can be switched off. To detach, the hydrogel is again heated, and the UAV can re-engage motors to resume flight.}
   \label{fig:fig5-placeholder}
 \end{figure}
@@ -425,7 +425,7 @@ Difficult-to-reach locations at high heights, or cluttered environments that pre
 
 
 \begin{figure}
-  \includegraphics[width=\linewidth]{figures/fig-6-snailbot-placeholder/fig-6-snailbot-placeholder.pdf}
+  \includegraphics[width=\linewidth]{chapters/papers/SB/figures/fig-6-snailbot-placeholder/fig-6-snailbot-placeholder.pdf}
   \caption{SnailBot: (A) showcases different parts of the robot, (B) demonstrates the robot's ability to scale vertical walls, and (C) inverted, along the ceiling.}
   \label{fig:fig6-placeholder}
 \end{figure}
@@ -451,7 +451,7 @@ For a detailed list of all components, see the Experimental Section~\ref{subsec:
 
 
 \begin{wrapfigure}{r}{0.5\linewidth}
-  \includegraphics[width=\linewidth]{figures/fig-7-snailbot-closeup-placeholder/fig-7-snailbot-closeup-placeholder.pdf}
+  \includegraphics[width=\linewidth]{chapters/papers/SB/figures/fig-7-snailbot-closeup-placeholder/fig-7-snailbot-closeup-placeholder.pdf}
   \caption{SnailBot: exploded view of one foot and the bridge of the climbing robot.}
   \label{fig:fig7-placeholder}
 \end{wrapfigure}
