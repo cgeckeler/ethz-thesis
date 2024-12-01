@@ -1,0 +1,54 @@
+\begin{tikzpicture}  [align=center]
+  \begin{axis}
+    [    boxplot/draw direction = y,
+    legend pos=north west,
+    xmajorgrids,
+    % minor x tick num=1,
+    % xminorgrids, 
+    ymajorgrids,
+        ymin=0,
+    ymax=55,
+    minor y tick num=1, % how many minor ticks to have between major
+    yminorgrids,
+    % scale=0.9,
+    % y dir=reverse, %to have round1 at the top
+    boxplot/box extend=0.4, %control width of boxplot box
+    % height=0.5\columnwidth,
+    % width= 0.5\columnwidth,
+    xtick={1,2,3,4},
+    % xtick={0,...,10}
+    % x tick label as interval,
+    xticklabels={50,55,60,70},
+    % yticklabels={Round 1, Round 2, Round 3, Round 4},
+    % xticklabels={VLOS 1, VLOS 2, BVLOS 1, BVLOS 2},
+    % xlabel={Time per Collection Attempt (s)},
+    % nodes near coords,
+    cycle list ={m-blue, m-green, m-red, m-cyan, m-yellow},
+    every axis plot/.append style={thick, fill, fill opacity =0.5},
+    xlabel={$T_H$, Heating Temp. (C) (n=5, 2Min 70, 3 Min 60: n=3)},ylabel={$F_M$, Pull-Off Force (N)}]
+       \addlegendimage{only marks, mark=square*,mark size=4pt,mark options={color=m-blue}}
+\addlegendentry{2 Min. Cooling}
+   \addlegendimage{only marks, mark=square*,mark size=4pt,mark options={color=m-red}}
+\addlegendentry{3 Min. Cooling}
+  \foreach \n in {0,...,3} {
+			\addplot+[ boxplot,style=m-blue, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {figures/fig-2-plot-placeholder/heating_temperature.csv}
+      node[left, color=black, fill opacity=1] at (boxplot box cs: \boxplotvalue{median},0)
+{\pgfmathprintnumber{\fpeval{round(\boxplotvalue{median},0)}}};
+            % \pgfplotsset{cycle list shift=-\n+1} % Goes one style back (offset, not index)
+         \addplot+[only marks, mark=*,style=m-blue] table[x expr=\n+1.35, y index=\n, col sep=comma] {figures/fig-2-plot-placeholder/heating_temperature.csv};
+		};
+  \foreach \n in {4,...,5} {
+  			\addplot+[ boxplot={draw position = \n-1}, style=m-red, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {figures/fig-2-plot-placeholder/heating_temperature.csv}
+        node[left, color=black, fill opacity=1] at (boxplot box cs: \boxplotvalue{median},0)
+{\pgfmathprintnumber{\fpeval{round(\boxplotvalue{median},0)}}};
+                 \pgfplotsset{cycle list shift=-\n} % Goes one style back (offset, not index)
+         \addplot+[only marks, mark=*,style=m-red] table[x expr=(\n-1)+0.35, y index=\n, col sep=comma] {figures/fig-2-plot-placeholder/heating_temperature.csv};
+			% \addplot+[ boxplot={draw position = 4}, style=m-red, mark=*, fill, draw=black] table[y index=5, col sep=comma] {figures/fig-2-plot-placeholder/heating_temperature.csv};
+   %             \pgfplotsset{cycle list shift=-5} % Goes one style back (offset, not index)
+   %       \addplot+[only marks, mark=*,style=m-red] table[x expr=4.35, y index=5, col sep=comma] {figures/fig-2-plot-placeholder/heating_temperature.csv};
+   };
+  \end{axis}
+  \node at (current axis.north) [anchor=south] {$t_c=2 Min., F_P=4.9N, m=0.1g$};
+\end{tikzpicture}
+
+%%%TODO: place median number value? https://tikz.dev/pgfplots/libs-statistics
