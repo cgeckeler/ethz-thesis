@@ -25,12 +25,12 @@
     every axis plot/.append style={thick, fill, fill opacity =0.5},
     xlabel={Material (n=5)},ylabel={$F_M$, Pull-Off Force (N) (n=5)}]
   \foreach \n in {0,...,3} {
-			\addplot+[ boxplot, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {figures/fig-3-surfaces-placeholder/surface_materials.csv}
+			\addplot+[ boxplot, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {chapters/papers/SB/figures/fig-3-surfaces-placeholder/surface_materials.csv}
    %show median value
       node[left, color=black, fill opacity=1] at (boxplot box cs: \boxplotvalue{median},0)
 {\pgfmathprintnumber{\fpeval{round(\boxplotvalue{median},0)}}};
             \pgfplotsset{cycle list shift=-1*(\n+1)} % Goes one style back (offset, not index)
-         \addplot+[only marks, mark=*] table[x expr=\n+1.35, y index=\n, col sep=comma] {figures/fig-3-surfaces-placeholder/surface_materials.csv};
+         \addplot+[only marks, mark=*] table[x expr=\n+1.35, y index=\n, col sep=comma] {chapters/papers/SB/figures/fig-3-surfaces-placeholder/surface_materials.csv};
 		};
    \draw[-{Latex[round]}, thick] (axis cs:1,4) -- (axis cs:4,4) node[midway, above] {Increasing Smoothness};
   \end{axis}

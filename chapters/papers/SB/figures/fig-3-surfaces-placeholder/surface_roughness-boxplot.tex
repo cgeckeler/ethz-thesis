@@ -25,11 +25,11 @@
     every axis plot/.append style={thick, fill, fill opacity =0.5},
     xlabel={Sandpaper Grit (K80,K240: n=5, K320: n=4)},ylabel={$F_M$, Pull-Off Force (N)}]
   \foreach \n in {0,...,2} {
-			\addplot+[ boxplot, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {figures/fig-3-surfaces-placeholder/surface_roughness.csv}
+			\addplot+[ boxplot, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {chapters/papers/SB/figures/fig-3-surfaces-placeholder/surface_roughness.csv}
    node[left, color=black, fill opacity=1] at (boxplot box cs: \boxplotvalue{median},0)
 {\pgfmathprintnumber{\fpeval{round(\boxplotvalue{median},0)}}};
          \pgfplotsset{cycle list shift=-1*(\n+1)} % Goes one style back (offset, not index)
-         \addplot+[only marks, mark=*] table[x expr=\n+1.35, y index=\n, col sep=comma] {figures/fig-3-surfaces-placeholder/surface_roughness.csv};
+         \addplot+[only marks, mark=*] table[x expr=\n+1.35, y index=\n, col sep=comma] {chapters/papers/SB/figures/fig-3-surfaces-placeholder/surface_roughness.csv};
          % \node at (axis cs:1, 2) [anchor=east] {Median};
 		};
 %   \pgfplotsinvokeforeach {1,2,3} { % Change numbers to the total number of boxplots/groups
