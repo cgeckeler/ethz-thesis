@@ -1,0 +1,45 @@
+% \begin{tikzpicture} [align=center]
+%   \begin{axis}
+%     [customboxplotstyle, xlabel={Time per Deployment Attempt (s)},]
+%   \foreach \n in {0,...,3} {
+% 			\addplot+[customaddplotstyle] table[y index=\n, col sep=comma] 
+%    {figures/fig-6-bvlos-vlos/sus-bvlos-vlos.csv};
+% 		};
+%   \end{axis}
+% \end{tikzpicture}
+
+% \begin{tikzpicture}  [align=center]
+%   \begin{axis}
+%     [boxplot/draw direction = x,
+%     xmajorgrids,
+%     minor x tick num=1,
+%     xminorgrids,
+%     y dir=reverse, %to have round1 at the top
+%     % ymajorgrids,
+%     boxplot/box extend=0.1, %control width of boxplot box
+%     height=0.25\columnwidth,
+%     width= \columnwidth,
+%     % ytick={1},
+%     % yticklabels={Round 1, Round 2, Round 3, Round 4},
+%     yticklabel=\empty,
+%     xlabel={Percent Difference in SUS Score BVLOS to VLOS},
+%     % nodes near coords,
+%     cycle list ={m-blue, m-green, m-red, m-cyan, m-yellow},
+%     every axis plot/.append style={thick, fill, fill opacity =0.5}
+%     ]
+%   \addplot+[boxplot, mark=*, fill, draw=black] table[y index=0, col sep=comma] {figures/fig-6-bvlos-vlos/sus-bvlos-vlos.csv};
+%   \end{axis}
+% \end{tikzpicture}
+
+\begin{tikzpicture}  [align=center]
+  \begin{axis}
+    [customboxplotstyle,
+    height=0.25\columnwidth,
+    xlabel={Percent Difference in SUS Score BVLOS to VLOS},
+    xmin=-0.3,
+    xmax=0.3,
+    yticklabels={},
+    ]
+  \addplot+[boxplot, mark=*, fill, draw=black] table[y index=0, col sep=comma] {figures/fig-6-bvlos-vlos/sus-bvlos-vlos.csv};
+  \end{axis}
+\end{tikzpicture}

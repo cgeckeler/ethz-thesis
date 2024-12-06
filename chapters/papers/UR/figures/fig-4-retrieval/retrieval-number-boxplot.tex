@@ -1,0 +1,8 @@
+\begin{tikzpicture}  [align=center]
+  \begin{axis}
+    [customboxplotstyle, xlabel={Number of Collections},]
+  \foreach \n in {0,...,3} {
+			\addplot+[customaddplotstyle] table[y index=\n, col sep=comma] {figures/fig-4-retrieval/retrieval-number.csv};
+		};
+  \end{axis}
+\end{tikzpicture}

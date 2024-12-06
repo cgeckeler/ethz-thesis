@@ -1,0 +1,133 @@
+% \definecolor{m-blue}    {HTML}{4477AA}
+% \definecolor{m-cyan}    {HTML}{66CCEE}
+% \definecolor{m-green}   {HTML}{228833}
+% \definecolor{m-yellow}  {HTML}{CCBB44}
+% \definecolor{m-red}     {HTML}{EE6677}
+% \definecolor{m-purple}  {HTML}{AA3377}
+% \definecolor{m-grey}    {HTML}{BBBBBB}
+ 
+% % \begin{tikzpicture}  [align=center]
+% %   \begin{axis}
+% %     [boxplot/draw direction = y,
+% %     xtick={1,2,3, 4},
+% %     xticklabels={Round 1, Round 2, Round 3, Round 4},
+% %     cycle list ={m-blue, m-green, m-red, m-cyan, m-yellow},
+% %     every axis plot/.append style={thick, fill, fill opacity =0.5,  boxplot/outlier={mark=*}}
+% %     ]
+% %     \addplot+[
+% %     boxplot prepared={
+% %       median=26,
+% %       upper quartile=32,
+% %       lower quartile=14.5,
+% %       upper whisker=56,
+% %       lower whisker=6
+% %     },
+% %     ] coordinates {};
+% %     \addplot+[
+% %     boxplot prepared={
+% %       median=20,
+% %       upper quartile=34.5,
+% %       lower quartile=11.5,
+% %       upper whisker=80,
+% %       lower whisker=8
+% %     },
+% %     ] coordinates {};
+% %     \addplot+[
+% %     boxplot prepared={
+% %       median=43.5,
+% %       upper quartile=60.25,
+% %       lower quartile=37.5,
+% %       upper whisker=85,
+% %       lower whisker=33
+% %     },
+% %     ] coordinates {};
+% %     \addplot+[
+% %     boxplot prepared={
+% %       median=24.75,
+% %       upper quartile=43,
+% %       lower quartile=15,
+% %       upper whisker=75,
+% %       lower whisker=9
+% %     },
+% %     ] coordinates {};
+% %   \end{axis}
+% % \end{tikzpicture}
+
+% % \begin{filecontents*}{data.csv}
+% % 23	36	53	18
+% % 46	8	47	44
+% % 9	19	44	19
+% % 34	34	35	43
+% % 17	11	27	39
+% % 14	33	34	23
+% % 24	20	13	19
+% % 24	22	32	19
+% % 13	13	20	12
+% % 34	13	33	17
+% % 14	16	33	33
+% % 24	16	58	21
+% % 15	17	50	26
+% % 16	18		18
+% % 16	16		19.5
+% % 15	19		29.5
+% % 17	14		30
+% % 19	56		22
+% % 20	41		
+% % 42	14		
+% % 13	19		
+% % \end{filecontents*}
+
+
+% % \begin{tikzpicture} [align=center]
+% \begin{tikzpicture} [align=center]
+% 	% \pgfplotstableread[col sep=comma]{data.csv}\csvdata
+%  	% \pgfplotstabletranspose\datatransposed{\csvdata} 
+%   \begin{axis}
+%     [boxplot/draw direction = y,
+%     ymajorgrids,
+%     minor y tick num=1,
+%     yminorgrids,
+%     % xmajorgrids,
+%     xtick={1,2,3,4},
+%     xticklabels={Round 1, Round 2, Round 3, Round 4},
+%     ylabel={Time per Collection Attempt (s)},
+%     % nodes near coords,
+%     cycle list ={m-blue, m-green, m-red, m-cyan, m-yellow},
+%     every axis plot/.append style={thick, fill, fill opacity =0.5}
+%     ]
+% 		\foreach \n in {0,...,3} {
+% 			\addplot+[boxplot, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {figures/fig-5-deployment/deployment-time.csv};
+% 		};
+%   \end{axis}
+% \end{tikzpicture}
+
+
+% % \begin{tikzpicture}  [align=center]
+% % 	\pgfplotstableread[col sep=comma]{figures/fig-5-deployment/deployment_time.csv}\csvdata
+% %  	\pgfplotstabletranspose\datatransposed{\csvdata} 
+% %   \begin{axis}
+% %     [boxplot/draw direction = y,
+% %     xtick={1,2,3,4},
+% %     xticklabels={Round 1, Round 2, Round 3, Round 4},
+% %     cycle list ={m-blue, m-green, m-red, m-cyan, m-yellow},
+% %     every axis plot/.append style={thick, fill, fill opacity =0.5}
+% %     ]
+% % 	\foreach \n in {1,...,4} {
+% % 	   \addplot+[boxplot, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {figures/fig-5-deployment/deployment_time.csv};
+% %     };
+% %  	% \foreach \n in {1,...,4} {
+% % 	 %   \addplot+[boxplot, mark=*, fill, draw=black] table[y index=\n, col sep=comma] {datatransposed};
+% %   %   };
+% %   \end{axis}
+% % \end{tikzpicture}
+
+
+\begin{tikzpicture} [align=center]
+  \begin{axis}
+    [customboxplotstyle, xlabel={Time per Deployment Attempt (s)},]
+  \foreach \n in {0,...,3} {
+			\addplot+[customaddplotstyle] table[y index=\n, col sep=comma] 
+   {figures/fig-5-deployment/deployment-time.csv};
+		};
+  \end{axis}
+\end{tikzpicture}
