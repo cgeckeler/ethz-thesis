@@ -1,0 +1,27 @@
+% \documentclass[border=0.2cm]{standalone}
+% \documentclass[tikz, convert={density=300,outext=.png}]{standalone} => probably not needed
+ 
+% % Pie chart drawing library 
+% \usepackage{pgf-pie}  
+ 
+% \begin{document}
+
+\definecolor{m-blue}    {HTML}{4477AA}
+\definecolor{m-cyan}    {HTML}{66CCEE}
+\definecolor{m-green}   {HTML}{228833}
+\definecolor{m-yellow}  {HTML}{CCBB44}
+\definecolor{m-red}     {HTML}{EE6677}
+\definecolor{m-purple}  {HTML}{AA3377}
+\definecolor{m-grey}    {HTML}{BBBBBB}
+ 
+\begin{tikzpicture} [align=center]
+ % \color[HTML]{4477AA}, \color[HTML]{FF7F00}, \color[HTML]{FF7F00}, \color[HTML]{FF7F00}, \color[HTML]{FF7F00}
+\pie[scale=0.75, explode=0.1, color={m-blue, m-cyan, m-green, m-yellow, m-red}]{
+    42.3/Pump,
+    22.3/Electronics and\\ enclosure,
+    13.3/Legs and\\ hook assembly,
+    11.8/Tenax tube and\\ tubing,
+    10.2/Battery} 
+\end{tikzpicture}
+ 
+% \end{document}
