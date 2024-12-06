@@ -1,0 +1,33 @@
+\begin{table}[t]
+    \centering
+    \begin{adjustbox}{max width=\columnwidth}
+    \setlength{\tabcolsep}{3pt}
+    \begin{tabular}{c|c|c|c}
+        \toprule
+        methods & RMSE & RMSE (wb) & RMSE (curve) \\
+        \hline
+        Ours (PR Bias, 5100 ms) & 21.4938 & 19.8148 & 16.6109  \\
+        Event Counting\cite{RGBD} (6000 ms) & 33.1656 & 31.6368 & 26.0675 \\
+    \bottomrule
+    \end{tabular}
+    % \caption[Test Chart Color Errors]{Mean error between captured color values and their ground-truth on the test chart. }
+    % Differences are computed using the euclidean distance in CIE 1976 L*a*b* color space. 'wb' is linearly white balanced, 'curve' corrects for the exponential scaling of measurements.}
+    \end{adjustbox}
+\end{table}
+
+% \begin{table}[t]
+%     \centering
+%     \begin{adjustbox}{max width=\columnwidth}
+%     \setlength{\tabcolsep}{3pt}
+%     \begin{tabular}{c|ccc}
+%     \toprule
+%     methods & RMSE & RMSE (wb) & RMSE (curve) \\
+%     Ours (PR Bias, 5100 ms) & 21.4938 & 19.8148 & 16.6109 \\
+%     Event Counting\cite{RGBD} (6000 ms) & 33.1656 & 31.6368 & 26.0675 \\
+%     \bottomrule
+%     \end{tabular}
+%     \caption[Test Chart Color Errors]{Mean error between captured color values and their ground-truth on the test chart. }
+%     % Differences are computed using the euclidean distance in CIE 1976 L*a*b* color space. 'wb' is linearly white balanced, 'curve' corrects for the exponential scaling of measurements.
+%     \label{table:Color_Error}
+%     \end{adjustbox}
+% \end{table}

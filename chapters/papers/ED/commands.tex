@@ -1,0 +1,57 @@
+\newcommand{\imageTable}[9][]{
+\begin{tikzpicture}[node distance =0pt and 0.5cm]
+
+\def\dirName{#2}
+\def\separator{#4}
+
+\def\sensorNames{#5}
+\def\sceneNames{#3}
+\def\sceneTitles{#6}
+\def\sensorTitles{#7}
+
+\StrCount{\sceneNames}{,}[\maxRow]
+\StrCount{\sensorNames}{,}[\maxCol]
+\pgfmathsetmacro{\nRows}{\maxRow+1}
+\pgfmathsetmacro{\nCols}{\maxCol+1}
+
+\def\vSpacing{#8}
+\def \hSpacing{#9}
+
+\pgfmathsetmacro{\imageHeight}{.8 * \vSpacing}
+
+\pgfmathsetmacro{\rowStart}{0}
+\pgfmathsetmacro{\rowEnd}{\nRows-1}
+\def\colStart{1}
+\pgfmathsetmacro{\colEnd}{\maxCol + 1}
+
+  \foreach \scene [count=\y from \rowStart] [evaluate=\y as \yp using \vSpacing*\y] in \sceneNames {
+    \foreach \sensor [count=\x from \colStart] [evaluate=\x as \xp using \hSpacing*\x] in \sensorNames {
+    \ifx\\#1\\
+    \else
+        \pgfmathsetmacro{\xp}{\hSpacing*\y}
+        \pgfmathsetmacro{\yp}{\vSpacing*\x} 
+    \fi
+    \node (\x\y) at (\xp,\yp){\includegraphics[height=\imageHeight cm]{
+       \dirName/\scene\separator\sensor}};
+       }
+    }
+  \foreach \sensor [count=\x from \colStart] [evaluate=\x as \xp using \hSpacing*\x] in \sensorTitles {
+  \ifx\\#1\\
+        \pgfmathsetmacro{\yp}{\vSpacing*(\nRows-0.5) + (0.05*\baselineskip)} 
+  \else
+        \pgfmathsetmacro{\yp}{\vSpacing*\x}
+        \pgfmathsetmacro{\xp}{-\hSpacing}
+  \fi
+  \node (\x)[text width=\hSpacing cm,align=center] at (\xp,\yp) {\sensor};
+  }
+  \foreach \scene [count=\y from \rowStart] [evaluate=\y as \yp using \vSpacing*\y] in \sceneTitles {
+  \ifx\\#1\\
+        \pgfmathsetmacro{\xp}{0} 
+  \else
+        \pgfmathsetmacro{\xp}{\hSpacing*\y}
+        \pgfmathsetmacro{\yp}{\vSpacing*\nCols+1}
+  \fi
+    \node (\y) at (\xp, \yp) {\scene};
+  }
+\end{tikzpicture}
+}

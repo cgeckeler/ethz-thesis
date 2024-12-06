@@ -1,0 +1,49 @@
+\begin{figure*}
+    % \imageTable[invert]{resources/images/coco/captures}{stopsign,fruit,bedroom,bear}{/}{count, bias, gt}{}{Count, Ours, GT}{5.5}{5.6}
+    \imageTable[invert]{resources/images/coco/captures}{stopsign,fruit,bedroom,bear,h_gradient}{/}{gt.jpg, bias, count}{}{}{3.5}{3.5}
+    \label{fig:COCOImage}
+    \caption[Captures of Projected Images]{Samples of reconstructed color-corrected images using the Event Counting (top)\cite{Ehsan2022}, ours (mid) and groundtruth (bottom).}
+    \label{fig:coco_samples}
+\end{figure*}
+
+% \begin{figure}[hbt!]
+%     \centering
+%     \begin{tabular}{ccccc}
+%         \makecell{Counting\\(baseline)}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/stopsign/count.png}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/bear/count.png}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/surf/count.png}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/fruit/count.png}\\
+%         \makecell{Bias Shift\\(ours)}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/stopsign/bias.png}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/bear/bias.png}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/surf/bias.png}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/fruit/bias.png}\\
+%         \makecell{Image\\(Groundtruth)}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/stopsign/gt.jpg}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/bear/gt.jpg}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/surf/gt.jpg}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/fruit/gt.jpg}\\
+%     \end{tabular}
+%     \caption[Captures of Projected COCO Images]{Samples of reconstructed images from the MS COCO dataset\cite{MSCOCO}. Our method does not show artefacts and improved dynnamic range.}
+%     \label{fig:coco_samples}
+% \end{figure}
+% \begin{figure}[hbt!]
+%     \centering
+%     \begin{tabular}{ccccc}
+%         \makecell{Counting\\(baseline)}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/white/count.png}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/h_gradient/count.png}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/bg/count.png}\\
+%         \makecell{Bias Shift\\(ours)}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/white/bias.png}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/h_gradient/bias.png}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/bg/bias.png}\\
+%         \makecell{Image\\(Groundtruth)}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/white/gt.jpg}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/h_gradient/gt.png}
+%         & \includegraphics[height=0.2\linewidth]{resources/images/coco/captures/bg/gt.png}\\
+%     \end{tabular}
+%     \caption[Captures of Projected Test Images]{Samples of reconstructed test images. Loss of events due to limitations in bandwidth causes streaking artifacts when using the Event Counting method.}
+%     \label{fig:pattern_sample}
+% \end{figure}
