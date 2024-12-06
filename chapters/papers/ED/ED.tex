@@ -1,0 +1,88 @@
+\chapter[Event Spectroscopy]{Event Spectroscopy: Event-based Multispectral and Depth Sensing using Structured Light}
+\label{ch:ED}
+
+
+
+% Maybe better:
+% Event Spectroscopy: Event-based Multispectral and Depth Sensing using Structured Light
+
+
+\author{Manasi~Muglikar, Niklas~Neugebauer, Christian~Geckeler, Davide Scaramuzza, and Stefano~Mintchev% <-this % stops a space
+\thanks{This work was supported by the <TODO add funding> Swiss National Science Foundation through the Eccellenza Grant number 186865.}% <-this % stops a space
+\thanks{The authors are with <TODO add institutions> the Environmental Robotics Laboratory, Dep. of Environmental Systems Science, ETH Zurich, 8092 Zurich, Switzerland and with the Swiss Federal Institute for Forest, Snow and Landscape Research (WSL), 8903 Birmensdorf, Switzerland. ({\tt\footnotesize \{cgeckeler, smintchev\}@ethz.ch})}%
+}
+
+
+%% (RAL Final Version) Add more info lines in the \author command  (editor, accepted dates, etc)
+%\author{Christian~Geckeler,
+%	and Stefano~Mintchev%
+%	\thanks{Manuscript received: July, 18, 2023; Revised October, 15, 2023; Accepted December, 12, 2023.}%Use only for final RAL version
+%	\thanks{This paper was recommended for publication by Editor Hyungpil Moon upon evaluation of the Associate Editor and Reviewers' comments.
+%		This work was supported by the Swiss National Science Foundation through the Eccellenza Grant number 186865.} %Use only for final RAL version
+%	\thanks{The authors are with the Environmental Robotics Laboratory, Dept. of Environmental Systems Science, ETH Zurich, 8092 Zurich, Switzerland and with the Swiss Federal Institute for Forest, Snow and Landscape Research (WSL), 8903 Birmensdorf, Switzerland. {\tt\footnotesize \{cgeckeler, smintchev\}@ethz.ch}}%
+%	\thanks{Digital Object Identifier (DOI): see top of this page.}
+%}
+%% Use only for final RAL version.
+
+
+
+%% (Final RAL version) add Paper headers, fill in <name>
+%\markboth{IEEE Robotics and Automation Letters. Preprint Version. <MONTH>, <YEAR>}
+%{Geckeler \MakeLowercase{\textit{et al.}}: <TITLE>} 
+%% Use only for final RAL version
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{sections/00_abstract.tex}
+
+% (RAL Final Version) only use keywords (max 5) then, check list: https://www.ieee-ras.org/publications/ra-l/keywords
+% \begin{IEEEkeywords} %% only final version
+% aerial sensor placement; environmental monitoring; forest canopies; micro-aerial vehicles;  Robotics and Automation in Agriculture and Forestry
+% \end{IEEEkeywords}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \input{sections/introduction2}
+% (RAL Final Version) Use only for final RAL version Formatting 
+% Drop letter for first word of the Introduction
+%\IEEEPARstart{F}{orests} 
+\input{sections/01_introduction}
+\input{sections/02_related_work}
+\input{sections/03_methodology}
+\input{sections/04_results}
+\input{sections/05_tasks}
+\input{sections/05_conclusion}
+
+
+%Needed? or \vfill?
+% \addtolength{\textheight}{-12cm}   % This command serves to balance the column lengths
+                                  % on the last page of the document manually. It shortens
+                                  % the textheight of the last page by a suitable amount.
+                                  % This command does not take effect until the next page
+                                  % so it should come on the page before the last. Make
+                                  % sure that you do not shorten the textheight too much.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section*{APPENDIX}
+%Appendixes should appear before the acknowledgment.
+
+\input{sections/06_acknowledgments}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{bibtex/IEEEtran}
+\bibliography{bibtex/CG-references,all,bibtex/control}
+
+% {
+%     \small
+%     \bibliographystyle{ieeenat_fullname}
+%     \bibliography{all,bibtex/CG-references}
+% }
+
+\end{document}
