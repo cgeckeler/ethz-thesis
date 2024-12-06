@@ -234,11 +234,12 @@ Differing applications of the adhesive will require different levels of adhesion
 %   \label{fig:fig2-placeholder}
 % \end{figure}
 
+
 \begin{figure}
 \centering
 \resizebox{\columnwidth}{0.99\textheight}{%
     \begin{tikzpicture}[ image/.style = {
-    text width=0.49\textwidth,
+    text width=0.75\textwidth,
     % text height = 0.25\textwidth,
     inner sep=1pt, outer sep=1pt}, %% default 0,0
     node distance = 3mm and 1mm,  % default 1,1
@@ -277,6 +278,7 @@ Differing applications of the adhesive will require different levels of adhesion
   \label{fig:fig-2-plots-placeholder}
 
 \end{figure}
+
 
 Figure~\ref{fig:fig-2-plots-placeholder} shows the maximum pull-off force ($F_M$) as a function of the different parameters affecting adhesion. Figure~\ref{fig:fig-2-plots-placeholder}A shows the test setup. A certain amount of hydrogel ($m$, Figure~\ref{fig:fig-2-plots-placeholder}G) is placed on top of a fixed copper plate, which is above a heating resistance wire to heat the hydrogel to a specific temperature ($T_H$, Figure~\ref{fig:fig-2-plots-placeholder}D) and initiate the adhesion process. A second movable copper plate is lowered, pressing against the adhesive with a certain force ($F_P$, Figure~\ref{fig:fig-2-plots-placeholder}E,F), measured by a loadcell. 
 % First, the hydrogel is heated to the specified temperature, sandwiched between the plates, then cooled for either two or three minutes. The movable plate is raised and the maximum force until separation is measured. 
@@ -323,8 +325,8 @@ To ensure adhesion across a variety of substrates for monitoring applications in
 
 \begin{figure}
 \centering
-% \resizebox{\columnwidth}{0.99\textheight}{%
-    \begin{tikzpicture}[ image/.style = {text width=0.49\textwidth,
+\resizebox{\columnwidth}{!}{%
+    \begin{tikzpicture}[ image/.style = {text width=0.75\textwidth,
     % text height = 0.3\textwidth,
     inner sep=1pt, outer sep=1pt}, %% default 0,0
     node distance = 1mm and 1mm,  % default 1,1
@@ -339,7 +341,7 @@ To ensure adhesion across a variety of substrates for monitoring applications in
 % \node [above left=of frame2] {B}; %  at (-4,2)
 \node[anchor=south west, above left=\myanchorshift] at (frame2.north west) {\large B};
 \end{tikzpicture}
-% }
+}
   \caption{Maximum pull-off force with different surface roughnesses (A) and materials (B).}
   \label{fig:fig-plot-surfaces}
 
@@ -353,7 +355,7 @@ The test-setup used to measure the surface roughness tests is similar to the tes
 
 \subsubsection{Water Solubility}
 \begin{wrapfigure}{r}{0.5\linewidth}
-  \includegraphics[width=\linewidth]{figures/fig-water-solubility/fig-water-solubility.pdf}
+  \includegraphics[width=\linewidth]{chapters/papers/SB/figures/fig-water-solubility/fig-water-solubility.pdf}
   \caption{Gelatin-hydrogel water solubility removes sensor attached to trunk under simulated rainfall.}
   \label{fig:fig-water-solubility}
 \end{wrapfigure}
@@ -450,11 +452,13 @@ The bridge contains the battery, single-board computer which controls everything
 For a detailed list of all components, see the Experimental Section~\ref{subsec:experimental_snailbot}.
 
 
-\begin{wrapfigure}{r}{0.5\linewidth}
+% \begin{wrapfigure}{r}{\linewidth}
+\begin{figure}
   \includegraphics[width=\linewidth]{chapters/papers/SB/figures/fig-7-snailbot-closeup-placeholder/fig-7-snailbot-closeup-placeholder.pdf}
   \caption{SnailBot: exploded view of one foot and the bridge of the climbing robot.}
   \label{fig:fig7-placeholder}
-\end{wrapfigure}
+% \end{wrapfigure}
+\end{figure}
 % maybe have exploded foot here, or full schematic and mechanism, or robot diagramm with axis
 
 % Adhesive extrusion
@@ -518,7 +522,7 @@ A table with the weight breakdown of the different components and configurations
 
 %/ table with weight breakdown of the different solutions (perching/sensor attachment + snailbot)
 \begin{table}
-    \centering
+    % \centering
     \caption{Weight of different configurations, with weight needed to be held by the hydrogel.}
     % \begin{tabular}{c|c|c}
       % \begin{tabular}[htbp]{@{}lrr@{}}
@@ -533,8 +537,11 @@ A table with the weight breakdown of the different components and configurations
         \hline
         Total & 1147.10 & 100\\
         Supported & 1147.0 & 100%
+        \vspace{2em}
     \end{tabular}
-    \hfill
+    % \newline
+    % \vspace{2em}
+    % \newline
     \begin{tabular}[t]{lrr}
         SnailBot  & Mass(g) & \% Total \\
         \hline
@@ -544,8 +551,11 @@ A table with the weight breakdown of the different components and configurations
         \hline
         Total & 934.97 & 100   \\
         Supported & 934.97 & 100%
+        \vspace{2em}
     \end{tabular}
-    \hfill
+    % \newline
+    % \vspace{2em}
+    % \newline
     \begin{tabular}[t]{lrr}
         Sensor Placement  & Mass(g) & \% Total \\
         \hline
@@ -626,9 +636,9 @@ This work was supported by the Swiss National Science Foundation through the Ecc
 % Please also include your BibTeX data base file(s) in your submission
 % so that we can re-run BibTeX if necessary.
 %
-\bibliographystyle{MSP}
-%\bibliography{MSP-template}
-\bibliography{references.bib}
+% \bibliographystyle{MSP}
+% %\bibliography{MSP-template}
+% \bibliography{references.bib}
 
 % \textbf{References}\\
 
@@ -673,13 +683,13 @@ This work was supported by the Swiss National Science Foundation through the Ecc
 % Image should be 55 mm broad and 50 mm high or 110 mm broad and 20 mm high
 
 
-\begin{figure}
-\textbf{Table of Contents}\\
-\medskip
-  \includegraphics{figures/toc/toc.pdf}
-  \medskip
-  \caption*{Gelatin-based hydrogels are presented as a robust, biodegradable, and water-soluble method of adhesion for robotic environmental monitoring. Factors affecting the adhesion strength are characterized, and the hydrogel is tested on different materials with varying surface roughness. The utility of the hydrogel is showcased for three environmental monitoring tasks: a perching UAV, a climbing robot, and sensor placement.}
-\end{figure}
+% \begin{figure}
+% \textbf{Table of Contents}\\
+% \medskip
+%   \includegraphics{figures/toc/toc.pdf}
+%   \medskip
+%   \caption*{Gelatin-based hydrogels are presented as a robust, biodegradable, and water-soluble method of adhesion for robotic environmental monitoring. Factors affecting the adhesion strength are characterized, and the hydrogel is tested on different materials with varying surface roughness. The utility of the hydrogel is showcased for three environmental monitoring tasks: a perching UAV, a climbing robot, and sensor placement.}
+% \end{figure}
 
 
-\end{document}
+% \end{document}
