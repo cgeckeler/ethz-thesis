@@ -1,0 +1,15 @@
+\begin{table}[t]
+    \centering
+    \begin{tabular}{lrrr}
+    \toprule
+    channels  & \multicolumn{3}{c}{IoU}\\
+     & leaves & branches & mean\\
+    \midrule
+    depth  & 0.534 & 0.045 & 0.365\\
+    RGB  & 0.681 & 0.200 & 0.441\\
+    RGBD  & \textbf{0.706} & \textbf{0.288} & \textbf{0.497}\\
+    \bottomrule
+    \end{tabular}
+    \caption{The pipeline is run with only RGB, only depth, and all channels. For each of them, I compare their results with only initial connected component clustering and additional fine spectral clustering.}
+    \label{tab:segmentation_results}
+\end{table}
