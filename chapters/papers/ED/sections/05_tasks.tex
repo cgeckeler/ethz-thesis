@@ -15,7 +15,7 @@ We specifically focus on segmenting branches and leaves as applications for this
 \subsection{Full spectrum indoor scenes}
 \label{sec:fullspectrum}
 % \subsection{Multispectral material differentiation}
-\input{resources/figures/annotated_materials}
+\input{chapters/papers/ED/resources/figures/annotated_materials}
 We evaluate our approach using the full spectrum light source shown in \Fig \ref{fig:generalSetup}.
 % We evaluate the performance using material samples such as plastic, wood, foam, plaster, cork, leaf and branch 
 We illuminate the material samples, in particular a 99\% reflective reference panel, plastic, wood, foam, plaster, cork, leaf, branch, and various beans and capture the response in the event camera\Fig \ref{fig:materials}.
@@ -32,7 +32,7 @@ The normalized measurements are quite sensitive to outliers, which causes partic
 % \nn{added 3 most accurate graphs}
 \begin{figure}
 \centering
-\imageTable{resources/plots/multi-spectral}{individual-curves}{/}{plastic, leaf, foam}{}{}{2.75}{2.75}
+\imageTable{chapters/papers/ED/resources/plots/multi-spectral}{individual-curves}{/}{plastic, leaf, foam}{}{}{2.75}{2.75}
 % \imageTable{plots/MSI}{individual_curves}{/}{cork, plaster, plastic, wood}{}{}{3}{3}
 \caption{Normalized Material Reflectance Spectra \mm{make these plots better visible}}
 \label{fig:materialResponses}
@@ -51,13 +51,13 @@ Overall, the results suggest that RGB information is more important for the sema
 The combination of the two, however, depth improves the results by 30\%.
 We show qualitative results for the combined approach in \Fig \ref{fig:segment}.
 
-\input{resources/tables/table_segmentation}
+\input{chapters/papers/ED/resources/tables/table_segmentation}
 \subsection{Semantic segmentation}
 Lastly, we also evaluate our setup for segmenting the different parts of trees, namely branches and leaves.
 The spectral and depth information can be utilized for semantic segmentation specifically to identify leaves and branches.
 \begin{figure*}
     \centering
-    \imageTable{resources/images/segmentation}{03,04,05}{/}{depth, rgb, out}{}{depth, rgb, segmentation}{7.3}{4.5}
+    \imageTable{chapters/papers/ED/resources/images/segmentation}{03,04,05}{/}{depth, rgb, out}{}{depth, rgb, segmentation}{7.3}{4.5}
     \caption{Segmentation results}
     \label{fig:segment}
 \end{figure*}

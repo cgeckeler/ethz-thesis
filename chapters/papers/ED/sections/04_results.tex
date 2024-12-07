@@ -7,7 +7,7 @@ Finally, we evaluate the capability of our system for two tasks: material differ
 % \input{resources/figures/method_overview}
 \begin{figure}
     \centering
-    \includegraphics[width=.5\textwidth]{resources/images/multi-spectral/experiment_setup.png}
+    \includegraphics[width=.5\textwidth]{chapters/papers/ED/resources/images/multi-spectral/experiment_setup.png}
     \caption{Our full spectrum illumination setup.}
     \label{fig:generalSetup}
 \end{figure}
@@ -26,7 +26,7 @@ This sensor only provides regular events (change detection not exposure measurem
 We use a lens with field of view of $60^\circ$.
 
 \paragraph{Projector}
-\input{resources/figures/test}
+\input{chapters/papers/ED/resources/figures/test}
 We use two different projectors for our experiments.
 For depth estimation, we use a Sony MP-CL1A projector with a resolution of $1920\times720$ pixels.
 However, this projector can only project three distinct wavelengths (red, blue, green).
@@ -57,8 +57,8 @@ While the first metric shows how accurate existing measurements are, the second 
 
 % \paragraph{Results}
 % \mm{ToDo: add depth comparison with other sensors}\\
-\input{resources/figures/depth_comparison_short}
-\input{resources/tables/depth_chamfer}
+\input{chapters/papers/ED/resources/figures/depth_comparison_short}
+\input{chapters/papers/ED/resources/tables/depth_chamfer}
 % \mm{Add table for comparison for all objects}
 % \mm{Supplementary: Hole and plane reconstruction}
 We show qualitative results on depth reconstruction of all the depth sensors in \Fig \ref{fig:depth_comparison}.
@@ -70,7 +70,7 @@ Moreover, the due to the inherent issues of time-of-flight sensors it cannot cap
 Our method on the hand achieves the perfect balance by capturing the intricate details of the wireframe and the globe structure, due to its dense projected pattern.
 Quantitative comparisons using the Chamfer distance for the standard illumination show that our event-based depth sensor is $\%$ better than the state-of-the-art depth sensor for the same framerate \Tab \ref{tab:depthTable}.
 \paragraph{Effect of Illumination}
-\input{resources/tables/depth_illumination}
+\input{chapters/papers/ED/resources/tables/depth_illumination}
 Increasing the illumination results in overexposure of frames, further degrading the depth by $\%$ on average for state-of-the-art frame-based depth sensor \Tab \ref{tab:depth_illum}.
 Our method, on the otherhand, has a negligible drop in performance at higher illumination.
 
@@ -93,11 +93,11 @@ Table \ref{table:Color_Error} shows the RMSE over all 16 color blocks for differ
 We use the information from the grayscale blocks on the chart (Fig. \ref{fig:chart_brightness_curves}) to apply correction.
 After white-balancing and linearization of the images, our method shows significant improvements in color accuracy. 
 This can be traced mainly to its higher dynamic range (Fig. \ref{fig:chart_brightness_curves}).
-\input{resources/tables/color_chart_rmse}
+\input{chapters/papers/ED/resources/tables/color_chart_rmse}
 % \include{resources/figures/calibration_brightness_plots}
 
 \paragraph{Image reconstruction accuracy}
-\input{resources/figures/coco_results}
+\input{chapters/papers/ED/resources/figures/coco_results}
 % \mm{Add image reconstruction fig comparison}\\
 % \nn{done}
 We also evaluate our approach to reconstruct more complex images such as from the MSCOCO dataset \cite{MSCOCO}.
@@ -107,7 +107,7 @@ The results show a clear quantitative improvement in reconstructed RGB image RMS
 
 \begin{table}[]
     \centering
-    \input{resources/tables/coco_rmse}
+    \input{chapters/papers/ED/resources/tables/coco_rmse}
     \caption[Image Capture Errors]{Root Mean Squared error between the captured images and their ground truth. Colors are in RGB color space.}
     \label{fig:coco_results}
 \end{table}
